@@ -1,0 +1,472 @@
+<h1 style="text-align: center;"><span style="color: #3366ff;">Dictionaries</span></h1>
+<p>Dictionary is an unordered set of key and value pair. It is a container that contains data, enclosed within curly braces.</p>
+<p>The pair i.e., key and value is known as item. The key passed in the item must be unique.</p>
+<p>The key and the value is separated by a colon(:). This pair is known as item. Items are separated from each other by a comma(,). Different items are enclosed within a curly brace and this forms Dictionary.</p>
+<p><strong>Python Dictionary Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="number">100</span>:<span class="string">'Ravi'</span>&nbsp;,<span class="number">101</span>:<span class="string">'Vijay'</span>&nbsp;,<span class="number">102</span>:<span class="string">'Rahul'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ravi', 101: 'Vijay', 102: 'Rahul'}
+&gt;&gt;&gt;
+</pre>
+</div>
+<p><strong>Note:</strong></p>
+<p>Dictionary is mutable i.e., value can be updated.</p>
+<p>Key must be unique and immutable. Value is accessed by key. Value can be updated while key cannot be changed.</p>
+<p>Dictionary is known as Associative array since the Key works as Index and they are decided by the user.</p>
+<p><strong>Python Dictionary Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">plant={}&nbsp;&nbsp;</li>
+<li class="">plant[<span class="number">1</span>]=<span class="string">'Ravi'</span>&nbsp;&nbsp;</li>
+<li class="alt">plant[<span class="number">2</span>]=<span class="string">'Manoj'</span>&nbsp;&nbsp;</li>
+<li class="">plant[<span class="string">'name'</span>]=<span class="string">'Hari'</span>&nbsp;&nbsp;</li>
+<li class="alt">plant[<span class="number">4</span>]=<span class="string">'Om'</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;plant[<span class="number">2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;plant[<span class="string">'name'</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;plant[<span class="number">1</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;plant&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+Manoj
+Hari
+Ravi
+{1: 'Ravi', 2: 'Manoj', 4: 'Om', 'name': 'Hari'}
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Accessing Dictionary Values</h2>
+<p>Since Index is not defined, a Dictionary values can be accessed by their keys only. It means, to access dictionary elements we need to pass key, associated to the value.</p>
+<p><strong>Python Accessing Dictionary Element Syntax</strong></p>
+<div class="codeblock3">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&lt;dictionary_name&gt;[key]&nbsp;&nbsp;</li>
+<li class="">&lt;/dictionary_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Accessing Elements Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="string">'Id'</span>:<span class="number">100</span>,&nbsp;<span class="string">'Name'</span>:<span class="string">'Suresh'</span>,&nbsp;<span class="string">'Profession'</span>:<span class="string">'Developer'</span>}&nbsp;&nbsp;</li>
+<li class="">data2={<span class="string">'Id'</span>:<span class="number">101</span>,&nbsp;<span class="string">'Name'</span>:<span class="string">'Ramesh'</span>,&nbsp;<span class="string">'Profession'</span>:<span class="string">'Trainer'</span>}&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Id&nbsp;of&nbsp;1st&nbsp;employer&nbsp;is"</span>,data1[<span class="string">'Id'</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Id&nbsp;of&nbsp;2nd&nbsp;employer&nbsp;is"</span>,data2[<span class="string">'Id'</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Name&nbsp;of&nbsp;1st&nbsp;employer:"</span>,data1[<span class="string">'Name'</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Profession&nbsp;of&nbsp;2nd&nbsp;employer:"</span>,data2[<span class="string">'Profession'</span>]&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+Id of 1st employer is 100
+Id of 2nd employer is 101
+Name of 1st employer is Suresh
+Profession of 2nd employer is Trainer
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Updating Python Dictionary Elements</h2>
+<p>The item i.e., key-value pair can be updated. Updating means new item can be added. The values can be modified.</p>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="string">'Id'</span>:<span class="number">100</span>,&nbsp;<span class="string">'Name'</span>:<span class="string">'Suresh'</span>,&nbsp;<span class="string">'Profession'</span>:<span class="string">'Developer'</span>}&nbsp;&nbsp;</li>
+<li class="">data2={<span class="string">'Id'</span>:<span class="number">101</span>,&nbsp;<span class="string">'Name'</span>:<span class="string">'Ramesh'</span>,&nbsp;<span class="string">'Profession'</span>:<span class="string">'Trainer'</span>}&nbsp;&nbsp;</li>
+<li class="alt">data1[<span class="string">'Profession'</span>]=<span class="string">'Manager'</span>&nbsp;&nbsp;</li>
+<li class="">data2[<span class="string">'Salary'</span>]=<span class="number">20000</span>&nbsp;&nbsp;</li>
+<li class="alt">data1[<span class="string">'Salary'</span>]=<span class="number">15000</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data2&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{'Salary': 15000, 'Profession': 'Manager','Id': 100, 'Name': 'Suresh'}
+{'Salary': 20000, 'Profession': 'Trainer', 'Id': 101, 'Name': 'Ramesh'}
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Deleting Python Dictionary Elements Example</h2>
+<p><strong>del</strong>&nbsp;statement is used for performing deletion operation.</p>
+<p>An item can be deleted from a dictionary using the key only.</p>
+<p><strong>Delete Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">del</span>&nbsp;&nbsp;&lt;dictionary_name&gt;[key]&nbsp;&nbsp;</li>
+<li class="">&lt;/dictionary_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Whole of the dictionary can also be deleted using the del statement.</p>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">del</span>&nbsp;data[<span class="number">102</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">del</span>&nbsp;data&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;&nbsp;<span class="comment">#will&nbsp;show&nbsp;an&nbsp;error&nbsp;since&nbsp;dictionary&nbsp;is&nbsp;deleted.</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ram', 101: 'Suraj'}
+
+Traceback (most recent call last):
+ 	 File "C:/Python27/dict.py", line 5, in 
+  	  print data
+NameError: name 'data' is not defined
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Python Dictionary Functions and Methods</h2>
+<p>Python Dictionary supports the following Functions</p>
+<p><strong>Python Dictionary Functions</strong></p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Functions</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>len(dictionary)</td>
+<td>It returns number of items in a dictionary.</td>
+</tr>
+<tr>
+<td>cmp(dictionary1,dictionary2)</td>
+<td>It compares the two dictionaries.</td>
+</tr>
+<tr>
+<td>str(dictionary)</td>
+<td>It gives the string representation of a string.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python Dictionary Methods</strong></p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>keys()</td>
+<td>It returns all the keys element of a dictionary.</td>
+</tr>
+<tr>
+<td>values()</td>
+<td>It returns all the values element of a dictionary.</td>
+</tr>
+<tr>
+<td>items()</td>
+<td>It returns all the items(key-value pair) of a dictionary.</td>
+</tr>
+<tr>
+<td>update(dictionary2)</td>
+<td>It is used to add items of dictionary2 to first dictionary.</td>
+</tr>
+<tr>
+<td>clear()</td>
+<td>It is used to remove all items of a dictionary. It returns an empty dictionary.</td>
+</tr>
+<tr>
+<td>fromkeys(sequence,value1)/ fromkeys(sequence)</td>
+<td>It is used to create a new dictionary from the sequence where sequence elements forms the key and all keys share the values ?value1?. In case value1 is not give, it set the values of keys to be none.</td>
+</tr>
+<tr>
+<td>copy()</td>
+<td>It returns an ordered copy of the data.</td>
+</tr>
+<tr>
+<td>has_key(key)</td>
+<td>It returns a boolean value. True in case if key is present in the dictionary ,else false.</td>
+</tr>
+<tr>
+<td>get(key)</td>
+<td>It returns the value of the given key. If key is not present it returns none.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="h3">Python Dictionary len(dictionary) Example</h3>
+<p>It returns length of the dictionary.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;len(data)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ram', 101: 'Suraj', 102: 'Alok'}
+3
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary cmp(dictionary1,dictionary2) Example</h3>
+<p>The comparison is done on the basis of key and value.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">If,&nbsp;dictionary1&nbsp;==&nbsp;dictionary2,&nbsp;returns&nbsp;<span class="number">0.</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dictionary1&nbsp;&lt;&nbsp;dictionary2,&nbsp;returns&nbsp;-<span class="number">1.</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dictionary1&nbsp;&gt;&nbsp;dictionary2,&nbsp;returns&nbsp;<span class="number">1.</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class="">data2={<span class="number">103</span>:<span class="string">'abc'</span>,&nbsp;<span class="number">104</span>:<span class="string">'xyz'</span>,&nbsp;<span class="number">105</span>:<span class="string">'mno'</span>}&nbsp;&nbsp;</li>
+<li class="alt">data3={<span class="string">'Id'</span>:<span class="number">10</span>,&nbsp;<span class="string">'First'</span>:<span class="string">'Aman'</span>,<span class="string">'Second'</span>:<span class="string">'Sharma'</span>}&nbsp;&nbsp;</li>
+<li class="">data4={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;cmp(data1,data2)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;cmp(data1,data4)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;cmp(data3,data2)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+-1
+0
+1
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary str(dictionary) Example</h3>
+<p>This method returns string formation of the value.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str(data1)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ram', 101: 'Suraj', 102: 'Alok'}
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary keys() Method Example</h3>
+<p>This method returns all the keys element of a dictionary.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1.keys()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+[100, 101, 102]
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary values() Method Example</h3>
+<p>This method returns all the values element of a dictionary.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1.values()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+['Ram', 'Suraj', 'Alok']
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary items() Method Example</h3>
+<p>This method returns all the items(key-value pair) of a dictionary.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1.items()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+[(100, 'Ram'), (101, 'Suraj'), (102, 'Alok')]
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary update(dictionary2) Method Example</h3>
+<p>This method is used to add items of dictionary2 to first dictionary.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class="">data2={<span class="number">103</span>:<span class="string">'Sanjay'</span>}&nbsp;&nbsp;</li>
+<li class="alt">data1.update(data2)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data2&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ram', 101: 'Suraj', 102: 'Alok', 103: 'Sanjay'}
+{103: 'Sanjay'}
+&gt;&gt;&gt;  
+</pre>
+</div>
+<h3 class="h3">Python Dictionary clear() Method Example</h3>
+<p>It returns an ordered copy of the data.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1={<span class="number">100</span>:<span class="string">'Ram'</span>,&nbsp;<span class="number">101</span>:<span class="string">'Suraj'</span>,&nbsp;<span class="number">102</span>:<span class="string">'Alok'</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="alt">data1.clear()&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{100: 'Ram', 101: 'Suraj', 102: 'Alok'}
+{}
+&gt;&gt;&gt; 
+</pre>
+</div>
+<h3 class="h3">Python Dictionary fromkeys(sequence)/ fromkeys(seq,value) Method Example</h3>
+<p>This method is used to create a new dictionary from the sequence where sequence elements forms the key and all keys share the values ?value1?. In case value1 is not give, it set the values of keys to be none.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">sequence=(<span class="string">'Id'</span>&nbsp;,&nbsp;<span class="string">'Number'</span>&nbsp;,&nbsp;<span class="string">'Email'</span>)&nbsp;&nbsp;</li>
+<li class="">data={}&nbsp;&nbsp;</li>
+<li class="alt">data1={}&nbsp;&nbsp;</li>
+<li class="">data=data.fromkeys(sequence)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;</li>
+<li class="">data1=data1.fromkeys(sequence,<span class="number">100</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{'Email': None, 'Id': None, 'Number': None}
+{'Email': 100, 'Id': 100, 'Number': 100}
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary copy() Method Example</h3>
+<p>This method returns an ordered copy of the data.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="string">'Id'</span>:<span class="number">100</span>&nbsp;,&nbsp;<span class="string">'Name'</span>:<span class="string">'Aakash'</span>&nbsp;,&nbsp;<span class="string">'Age'</span>:<span class="number">23</span>}&nbsp;&nbsp;</li>
+<li class="">data1=data.copy()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+{'Age': 23, 'Id': 100, 'Name': 'Aakash'}
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary has_key(key) Method Example</h3>
+<p>It returns a boolean value. True in case if key is present in the dictionary, else false.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="string">'Id'</span>:<span class="number">100</span>&nbsp;,&nbsp;<span class="string">'Name'</span>:<span class="string">'Aakash'</span>&nbsp;,&nbsp;<span class="string">'Age'</span>:<span class="number">23</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data.has_key(<span class="string">'Age'</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data.has_key(<span class="string">'Email'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+True
+False
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python Dictionary get(key) Method Example</h3>
+<p>This method returns the value of the given key. If key is not present it returns none.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data={<span class="string">'Id'</span>:<span class="number">100</span>&nbsp;,&nbsp;<span class="string">'Name'</span>:<span class="string">'Aakash'</span>&nbsp;,&nbsp;<span class="string">'Age'</span>:<span class="number">23</span>}&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data.get(<span class="string">'Age'</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data.get(<span class="string">'Email'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+23
+None
+&gt;&gt;&gt;</pre>
+</div>

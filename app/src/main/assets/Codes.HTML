@@ -1,0 +1,449 @@
+<h2 class="h2">Basic Python codes:&nbsp;</h2>
+<h2 class="h2">Python program to print "Hello Python"</h2>
+<p>This is the most basic Python program. It specifies how to print any statement in Python.</p>
+<p>In old python (up to Python 2.7.0), print command is not written in parenthesis but in new python software (Python 3.4.3), it is mandatory to add a parenthesis to print a statement.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">print</span>&nbsp;(<span class="string">'Hello&nbsp;Python'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs1.png" alt="Python Basic Programs1" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python program to do arithmetical operations</h1>
+<p>The arithmetic operations are performed by calculator where we can perform addition, subtraction, multiplication and division. This example shows the basic arithmetic operations i.e.</p>
+<ul class="points">
+<li>Addition</li>
+<li>Subtraction</li>
+<li>Multiplication</li>
+<li>Division</li>
+</ul>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;Store&nbsp;input&nbsp;numbers:</span>&nbsp;&nbsp;</li>
+<li class="">num1&nbsp;=&nbsp;input(<span class="string">'Enter&nbsp;first&nbsp;number:&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="alt">num2&nbsp;=&nbsp;input(<span class="string">'Enter&nbsp;second&nbsp;number:&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;Add&nbsp;two&nbsp;numbers</span>&nbsp;&nbsp;</li>
+<li class="">sum&nbsp;=&nbsp;float(num1)&nbsp;+&nbsp;float(num2)&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;Subtract&nbsp;two&nbsp;numbers</span>&nbsp;&nbsp;</li>
+<li class="">min&nbsp;=&nbsp;float(num1)&nbsp;-&nbsp;float(num2)&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;Multiply&nbsp;two&nbsp;numbers</span>&nbsp;&nbsp;</li>
+<li class="">mul&nbsp;=&nbsp;float(num1)&nbsp;*&nbsp;float(num2)&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#Divide&nbsp;two&nbsp;numbers</span>&nbsp;&nbsp;</li>
+<li class="">div&nbsp;=&nbsp;float(num1)&nbsp;/&nbsp;float(num2)&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;Display&nbsp;the&nbsp;sum</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>(<span class="string">'The&nbsp;sum&nbsp;of&nbsp;{0}&nbsp;and&nbsp;{1}&nbsp;is&nbsp;{2}'</span>.format(num1,&nbsp;num2,&nbsp;sum))&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;Display&nbsp;the&nbsp;subtraction</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">'The&nbsp;subtraction&nbsp;of&nbsp;{0}&nbsp;and&nbsp;{1}&nbsp;is&nbsp;{2}'</span>.format(num1,&nbsp;num2,&nbsp;min))&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;Display&nbsp;the&nbsp;multiplication</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">'The&nbsp;multiplication&nbsp;of&nbsp;{0}&nbsp;and&nbsp;{1}&nbsp;is&nbsp;{2}'</span>.format(num1,&nbsp;num2,&nbsp;mul))&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;Display&nbsp;the&nbsp;division</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">'The&nbsp;division&nbsp;of&nbsp;{0}&nbsp;and&nbsp;{1}&nbsp;is&nbsp;{2}'</span>.format(num1,&nbsp;num2,&nbsp;div))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Note:</strong>&nbsp;Here input numbers are 10 and 20.</p>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs2.png" alt="Python Basic Programs2" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python program to find the area of a triangle</h1>
+<p><strong>Mathematical formula:</strong></p>
+<p><strong>Area of a triangle = (s*(s-a)*(s-b)*(s-c))-1/2</strong></p>
+<p>Here s is the semi-perimeter and a, b and c are three sides of the triangle.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;Three&nbsp;sides&nbsp;of&nbsp;the&nbsp;triangle&nbsp;is&nbsp;a,&nbsp;b&nbsp;and&nbsp;c:</span>&nbsp;&nbsp;</li>
+<li class="">a&nbsp;=&nbsp;float(input(<span class="string">'Enter&nbsp;first&nbsp;side:&nbsp;'</span>))&nbsp;&nbsp;</li>
+<li class="alt">b&nbsp;=&nbsp;float(input(<span class="string">'Enter&nbsp;second&nbsp;side:&nbsp;'</span>))&nbsp;&nbsp;</li>
+<li class="">c&nbsp;=&nbsp;float(input(<span class="string">'Enter&nbsp;third&nbsp;side:&nbsp;'</span>))&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;calculate&nbsp;the&nbsp;semi-perimeter</span>&nbsp;&nbsp;</li>
+<li class="alt">s&nbsp;=&nbsp;(a&nbsp;+&nbsp;b&nbsp;+&nbsp;c)&nbsp;/&nbsp;<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;calculate&nbsp;the&nbsp;area</span>&nbsp;&nbsp;</li>
+<li class="">area&nbsp;=&nbsp;(s*(s-a)*(s-b)*(s-c))&nbsp;**&nbsp;<span class="number">0.5</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">'The&nbsp;area&nbsp;of&nbsp;the&nbsp;triangle&nbsp;is&nbsp;%0.2f'</span>&nbsp;%area)&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs3.png" alt="Python Basic Programs3" /></p>
+<p><strong>Note:</strong>&nbsp;%0.2f floating point specifies at least 0 wide and 2 numbers after decimal. If you use %0.5f then it will give 5 numbers after decimal.</p>
+<p><strong>See this example:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs4.png" alt="Python Basic Programs4" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python program to swap two variables</h1>
+<p><strong>Variable swapping:</strong></p>
+<p>In computer programming, swapping two variables specifies the mutual exchange of values of the variables. It is generally done by using a temporary variable.</p>
+<p>For example:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data_item&nbsp;x&nbsp;:=&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="">data_item&nbsp;y&nbsp;:=&nbsp;<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class="alt">swap&nbsp;(x,&nbsp;y)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>After swapping:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data_item&nbsp;x&nbsp;:=&nbsp;<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class="">data_item&nbsp;y&nbsp;:=&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;Python&nbsp;swap&nbsp;program&nbsp;</span>&nbsp;&nbsp;</li>
+<li class="">x&nbsp;=&nbsp;input(<span class="string">'Enter&nbsp;value&nbsp;of&nbsp;x:&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="alt">y&nbsp;=&nbsp;input(<span class="string">'Enter&nbsp;value&nbsp;of&nbsp;y:&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;create&nbsp;a&nbsp;temporary&nbsp;variable&nbsp;and&nbsp;swap&nbsp;the&nbsp;values</span>&nbsp;&nbsp;</li>
+<li class="">temp&nbsp;=&nbsp;x&nbsp;&nbsp;</li>
+<li class="alt">x&nbsp;=&nbsp;y&nbsp;&nbsp;</li>
+<li class="">y&nbsp;=&nbsp;temp&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>(<span class="string">'The&nbsp;value&nbsp;of&nbsp;x&nbsp;after&nbsp;swapping:&nbsp;{}'</span>.format(x))&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">'The&nbsp;value&nbsp;of&nbsp;y&nbsp;after&nbsp;swapping:&nbsp;{}'</span>.format(y))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs6.png" alt="Python Basic Programs6" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">ython program to convert Celsius to Fahrenheit</h1>
+<p><strong>Celsius:</strong></p>
+<p>Celsius is a unit of measurement for temperature. It is also known as centigrade. It is a SI derived unit used by most of the countries worldwide.</p>
+<p>It is named after the Swedish astronomer Anders Celsius.</p>
+<p><strong>Fahrenheit:</strong></p>
+<p>Fahrenheit is also a temperature scale. It is named on Polish-born German physicist Daniel Gabriel Fahrenheit. It uses degree Fahrenheit as a unit for temperature.</p>
+<p><strong>Conversion formula:</strong></p>
+<div class="codeblock">T(?) = T(?) x 9/5 + 32</div>
+<p>Or,</p>
+<div class="codeblock">T(?) = T(?) x 1.8 + 32</div>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;Collect&nbsp;input&nbsp;from&nbsp;the&nbsp;user</span>&nbsp;&nbsp;</li>
+<li class="">celsius&nbsp;=&nbsp;float(input(<span class="string">'Enter&nbsp;temperature&nbsp;in&nbsp;Celsius:&nbsp;'</span>))&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;calculate&nbsp;temperature&nbsp;in&nbsp;Fahrenheit</span>&nbsp;&nbsp;</li>
+<li class="alt">fahrenheit&nbsp;=&nbsp;(celsius&nbsp;*&nbsp;<span class="number">1.8</span>)&nbsp;+&nbsp;<span class="number">32</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>(<span class="string">'%0.1f&nbsp;&nbsp;Celsius&nbsp;is&nbsp;equal&nbsp;to&nbsp;%0.1f&nbsp;degree&nbsp;Fahrenheit'</span>%(celsius,fahrenheit))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-basic-programs9.png" alt="Python Basic Programs9" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Check Prime Number</h1>
+<p><strong>Prime numbers:</strong></p>
+<p>A prime number is a natural number greater than 1 and having no positive divisor other than 1 and itself.</p>
+<p>For example: 3, 7, 11 etc are prime numbers.</p>
+<p><strong>Composite number:</strong></p>
+<p>Other natural numbers that are not prime numbers are called composite numbers.</p>
+<p>For example: 4, 6, 9 etc. are composite numbers.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">num&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">if</span>&nbsp;num&nbsp;&gt;&nbsp;<span class="number">1</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>&nbsp;i&nbsp;<span class="keyword">in</span>&nbsp;range(<span class="number">2</span>,num):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;(num&nbsp;%&nbsp;i)&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num,<span class="string">"is&nbsp;not&nbsp;a&nbsp;prime&nbsp;number"</span>)&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(i,<span class="string">"times"</span>,num//i,<span class="string">"is"</span>,num)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num,<span class="string">"is&nbsp;a&nbsp;prime&nbsp;number"</span>)&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num,<span class="string">"is&nbsp;not&nbsp;a&nbsp;prime&nbsp;number"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs5.png" alt="Python Condition And Loops5" /></p>
+<p>&nbsp;</p>
+<h2 class="h2">Python Program to check if a Number is Positive, Negative or Zero</h2>
+<p><strong>We can use a Python program to distinguish that if a number is positive, negative or zero.</strong></p>
+<p><strong>Positive Numbers:</strong>&nbsp;A number is known as a positive number if it has a greater value than zero.&nbsp;<strong>i.e.</strong>&nbsp;1, 2, 3, 4 etc.</p>
+<p><strong>Negative Numbers:</strong>&nbsp;A number is known as a negative number if it has a lesser value than zero. i.e. -1, -2, -3, -4 etc.</p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs1.png" alt="Python Condition And Loops1" /></p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">num&nbsp;=&nbsp;float(input(<span class="string">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">if</span>&nbsp;num&nbsp;&gt;&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;a&nbsp;positive&nbsp;number"</span>.format(num))&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">elif</span>&nbsp;num&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;zero"</span>.format(num))&nbsp;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;negative&nbsp;number"</span>.format(num))&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs2.png" alt="Python Condition And Loops2" /></p>
+<p><strong>Note:</strong>In the above example, elif statement is used. The elif statement is used to check multiple expressions for TRUE and executes a block of code when one of the conditions becomes TRUE.</p>
+<p>It is always followed by if statement.</p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Check if a Number is Odd or Even</h1>
+<p><strong>Odd and Even numbers:</strong></p>
+<p>If you divide a number by 2 and it gives a remainder of 0 then it is known as even number, otherwise an odd number.</p>
+<p><strong>Even number examples:</strong>&nbsp;2, 4, 6, 8, 10, etc.</p>
+<p><strong>Odd number examples:</strong>1, 3, 5, 7, 9 etc.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">num&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">if</span>&nbsp;(num&nbsp;%&nbsp;<span class="number">2</span>)&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;Even&nbsp;number"</span>.format(num))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;Odd&nbsp;number"</span>.format(num))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs3.png" alt="Python Condition And Loops3" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Check Leap Year</h1>
+<p><strong>Leap Year:</strong></p>
+<p>A year is called a leap year if it contains an additional day which makes the number of the days in that year is 366. This additional day is added in February which makes it 29 days long.</p>
+<p>A leap year occurred once every 4 years.</p>
+<p><strong>How to determine if a year is a leap year?</strong></p>
+<p>You should follow the following steps to determine whether a year is a leap year or not.</p>
+<ol class="points">
+<li>If a year is evenly divisible by 4 means having no remainder then go to next step. If it is not divisible by 4. It is not a leap year. For example: 1997 is not a leap year.</li>
+<li>If a year is divisible by 4, but not by 100. For example: 2012, it is a leap year. If a year is divisible by both 4 and 100, go to next step.</li>
+<li>If a year is divisible by 100, but not by 400. For example: 1900, then it is not a leap year. If a year is divisible by both, then it is a leap year. So 2000 is a leap year.</li>
+</ol>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">year&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;a&nbsp;year:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">if</span>&nbsp;(year&nbsp;%&nbsp;<span class="number">4</span>)&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;(year&nbsp;%&nbsp;<span class="number">100</span>)&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;(year&nbsp;%&nbsp;<span class="number">400</span>)&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;a&nbsp;leap&nbsp;year"</span>.format(year))&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;not&nbsp;a&nbsp;leap&nbsp;year"</span>.format(year))&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;a&nbsp;leap&nbsp;year"</span>.format(year))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"{0}&nbsp;is&nbsp;not&nbsp;a&nbsp;leap&nbsp;year"</span>.format(year))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs4.png" alt="Python Condition And Loops4" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Print the Fibonacci sequence</h1>
+<p><strong>Fibonacci sequence:</strong></p>
+<p>The Fibonacci sequence specifies a series of numbers where the next number is found by adding up the two numbers just before it.</p>
+<p><strong>For example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">0</span>,&nbsp;<span class="number">1</span>,&nbsp;<span class="number">1</span>,&nbsp;<span class="number">2</span>,&nbsp;<span class="number">3</span>,&nbsp;<span class="number">5</span>,&nbsp;<span class="number">8</span>,&nbsp;<span class="number">13</span>,&nbsp;<span class="number">21</span>,&nbsp;<span class="number">34</span>,&nbsp;<span class="keyword">and</span>&nbsp;so&nbsp;on....&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">nterms&nbsp;=&nbsp;int(input(<span class="string">"How&nbsp;many&nbsp;terms&nbsp;you&nbsp;want?&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;first&nbsp;two&nbsp;terms</span>&nbsp;&nbsp;</li>
+<li class="alt">n1&nbsp;=&nbsp;<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class="">n2&nbsp;=&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="alt">count&nbsp;=&nbsp;<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;check&nbsp;if&nbsp;the&nbsp;number&nbsp;of&nbsp;terms&nbsp;is&nbsp;valid</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">if</span>&nbsp;nterms&nbsp;&lt;=&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Plese&nbsp;enter&nbsp;a&nbsp;positive&nbsp;integer"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">elif</span>&nbsp;nterms&nbsp;==&nbsp;<span class="number">1</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Fibonacci&nbsp;sequence:"</span>)&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(n1)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Fibonacci&nbsp;sequence:"</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(n1,<span class="string">","</span>,n2,end=<span class="string">',&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">while</span>&nbsp;count&nbsp;&lt;&nbsp;nterms:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nth&nbsp;=&nbsp;n1&nbsp;+&nbsp;n2&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(nth,end=<span class="string">'&nbsp;,&nbsp;'</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">#&nbsp;update&nbsp;values</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n1&nbsp;=&nbsp;n2&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n2&nbsp;=&nbsp;nth&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count&nbsp;+=&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs9.png" alt="Python Condition And Loops9" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Find the Factorial of a Number</h1>
+<p><strong>What is factorial?</strong></p>
+<p>Factorial is a non-negative integer. It is the product of all positive integers less than or equal to that number for which you ask for factorial. It is denoted by exclamation sign (!).</p>
+<p>For example:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="number">4</span>!&nbsp;=&nbsp;<span class="number">4x3x2x1</span>&nbsp;=&nbsp;<span class="number">24</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>The factorial value of 4 is 24.</p>
+<p><strong>Note:</strong>&nbsp;The factorial value of 0 is 1 always. (Rule violation)</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">num&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="">factorial&nbsp;=&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">if</span>&nbsp;num&nbsp;&lt;&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Sorry,&nbsp;factorial&nbsp;does&nbsp;not&nbsp;exist&nbsp;for&nbsp;negative&nbsp;numbers"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">elif</span>&nbsp;num&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"The&nbsp;factorial&nbsp;of&nbsp;0&nbsp;is&nbsp;1"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>&nbsp;i&nbsp;<span class="keyword">in</span>&nbsp;range(<span class="number">1</span>,num&nbsp;+&nbsp;<span class="number">1</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;factorial&nbsp;=&nbsp;factorial*i&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"The&nbsp;factorial&nbsp;of"</span>,num,<span class="string">"is"</span>,factorial)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>The following example displays the factorial of 5 and -5.</strong></p>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/python-condition-and-loops-programs7.png" alt="Python Condition And Loops7" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Make a Simple Calculator</h1>
+<p>In Python, you can create a simple calculator, displaying the different arithmetical operations i.e. addition, subtraction, multiplication and division.</p>
+<p>The following program is intended to write a simple calculator in Python:</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;define&nbsp;functions</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;add(x,&nbsp;y):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="comment">"""This&nbsp;function&nbsp;adds&nbsp;two&nbsp;numbers""</span>&nbsp;</li>
+<li class=""><span class="comment">&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;y</span>&nbsp;</li>
+<li class="alt"><span class="comment">def&nbsp;subtract(x,&nbsp;y):</span>&nbsp;</li>
+<li class=""><span class="comment">&nbsp;&nbsp;&nbsp;"""</span>This&nbsp;function&nbsp;subtracts&nbsp;two&nbsp;numbers<span class="comment">"""</span>&nbsp;</li>
+<li class="alt"><span class="comment">&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;-&nbsp;y</span>&nbsp;</li>
+<li class=""><span class="comment">def&nbsp;multiply(x,&nbsp;y):</span>&nbsp;</li>
+<li class="alt"><span class="comment">&nbsp;&nbsp;&nbsp;"""</span>This&nbsp;function&nbsp;multiplies&nbsp;two&nbsp;numbers<span class="comment">"""</span>&nbsp;</li>
+<li class=""><span class="comment">&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;*&nbsp;y</span>&nbsp;</li>
+<li class="alt"><span class="comment">def&nbsp;divide(x,&nbsp;y):</span>&nbsp;</li>
+<li class=""><span class="comment">&nbsp;&nbsp;&nbsp;"""</span>This&nbsp;function&nbsp;divides&nbsp;two&nbsp;numbers"""&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;x&nbsp;/&nbsp;y&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;take&nbsp;input&nbsp;from&nbsp;the&nbsp;user</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">"Select&nbsp;operation."</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>(<span class="string">"1.Add"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">"2.Subtract"</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>(<span class="string">"3.Multiply"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(<span class="string">"4.Divide"</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt">choice&nbsp;=&nbsp;input(<span class="string">"Enter&nbsp;choice(1/2/3/4):"</span>)&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt">num1&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;first&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="">num2&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;second&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">if</span>&nbsp;choice&nbsp;==&nbsp;<span class="string">'1'</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num1,<span class="string">"+"</span>,num2,<span class="string">"="</span>,&nbsp;add(num1,num2))&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">elif</span>&nbsp;choice&nbsp;==&nbsp;<span class="string">'2'</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num1,<span class="string">"-"</span>,num2,<span class="string">"="</span>,&nbsp;subtract(num1,num2))&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">elif</span>&nbsp;choice&nbsp;==&nbsp;<span class="string">'3'</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num1,<span class="string">"*"</span>,num2,<span class="string">"="</span>,&nbsp;multiply(num1,num2))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">elif</span>&nbsp;choice&nbsp;==&nbsp;<span class="string">'4'</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(num1,<span class="string">"/"</span>,num2,<span class="string">"="</span>,&nbsp;divide(num1,num2))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Invalid&nbsp;input"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/pyhton-function-programs5.png" alt="Python Function Programs5" />&nbsp;<img src="https://www.javatpoint.com/python/images/pyhton-function-programs6.png" alt="Python Function Programs6" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Function to Display Calendar</h1>
+<p>In Python, we can display the calendar of any month of any year by importing the calendar module.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#&nbsp;First&nbsp;import&nbsp;the&nbsp;calendar&nbsp;module</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">import</span>&nbsp;calendar&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#&nbsp;ask&nbsp;of&nbsp;month&nbsp;and&nbsp;year</span>&nbsp;&nbsp;</li>
+<li class="">yy&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;year:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class="alt">mm&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;month:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;display&nbsp;the&nbsp;calendar</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>(calendar.month(yy,mm))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/pyhton-function-programs7.png" alt="Python Function Programs7" /></p>
+<p>&nbsp;</p>
+<h1 class="h1">Python Program to Find Factorial of Number Using Recursion</h1>
+<p><strong>Factorial:</strong>&nbsp;Factorial of a number specifies a product of all integers from 1 to that number. It is defined by the symbol explanation mark (!).</p>
+<p>For example: The factorial of 5 is denoted as 5! = 1*2*3*4*5 = 120.</p>
+<p><strong>See this example:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;recur_factorial(n):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;n&nbsp;==&nbsp;<span class="number">1</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;n&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;n*recur_factorial(n-<span class="number">1</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;take&nbsp;input&nbsp;from&nbsp;the&nbsp;user</span>&nbsp;&nbsp;</li>
+<li class="alt">num&nbsp;=&nbsp;int(input(<span class="string">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#&nbsp;check&nbsp;is&nbsp;the&nbsp;number&nbsp;is&nbsp;negative</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">if</span>&nbsp;num&nbsp;&lt;&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"Sorry,&nbsp;factorial&nbsp;does&nbsp;not&nbsp;exist&nbsp;for&nbsp;negative&nbsp;numbers"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">elif</span>&nbsp;num&nbsp;==&nbsp;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"The&nbsp;factorial&nbsp;of&nbsp;0&nbsp;is&nbsp;1"</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">else</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>(<span class="string">"The&nbsp;factorial&nbsp;of"</span>,num,<span class="string">"is"</span>,recur_factorial(num))&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/pyhton-function-programs9.png" alt="Python Function Programs9" /></p>

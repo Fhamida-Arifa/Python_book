@@ -1,0 +1,678 @@
+<h1 style="text-align: center;"><span style="color: #0000ff;">LISTS</span></h1>
+<p>Python list is a data structure which is used to store various types of data.</p>
+<p>In Python, lists are mutable i.e., Python will not create a new list if we modify an element of the list.</p>
+<p>It works as a container that holds other objects in a given order. We can perform various operations like insertion and deletion on list.</p>
+<p>A list can be composed by storing a sequence of different type of values separated by commas.</p>
+<p>Python list is enclosed between square([]) brackets and elements are stored in the index basis with starting index 0.</p>
+<p><strong>Python List Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];&nbsp;&nbsp;</li>
+<li class="">data2=[<span class="string">'x'</span>,<span class="string">'y'</span>,<span class="string">'z'</span>];&nbsp;&nbsp;</li>
+<li class="alt">data3=[<span class="number">12.5</span>,<span class="number">11.6</span>];&nbsp;&nbsp;</li>
+<li class="">data4=[<span class="string">'raman'</span>,<span class="string">'rahul'</span>];&nbsp;&nbsp;</li>
+<li class="alt">data5=[];&nbsp;&nbsp;</li>
+<li class="">data6=[<span class="string">'abhinav'</span>,<span class="number">10</span>,<span class="number">56.4</span>,<span class="string">'a'</span>];&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>A list can be created by putting the value inside the square bracket and separated by comma.</p>
+<h3 class="h3">Python List Syntax</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&lt;list_name&gt;=[value1,value2,value3,...,valuen];&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Syntax to Access Python List</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&lt;list_name&gt;[index]&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Python allows us to access value from the list by various ways.</p>
+<p><strong>Python Accessing List Elements Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];&nbsp;&nbsp;</li>
+<li class="">data2=[<span class="string">'x'</span>,<span class="string">'y'</span>,<span class="string">'z'</span>];&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1[<span class="number">0</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1[<span class="number">0</span>:<span class="number">2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data2[-<span class="number">3</span>:-<span class="number">1</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1[<span class="number">0</span>:]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data2[:<span class="number">2</span>]&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+&gt;&gt;&gt; 
+1
+[1, 2]
+['x', 'y']
+[1, 2, 3, 4]
+['x', 'y']
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Elements in a Lists:</h2>
+<p>Following are the pictorial representation of a list. We can see that it allows to access elements from both end (forward and backward).</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">Data=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><img src="https://www.javatpoint.com/python/images/elementsinalists.png" alt="python string" /></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">Data[<span class="number">0</span>]=<span class="number">1</span>=Data[-<span class="number">5</span>]&nbsp;,&nbsp;Data[<span class="number">1</span>]=<span class="number">2</span>=Data[-<span class="number">4</span>]&nbsp;,&nbsp;Data[<span class="number">2</span>]=<span class="number">3</span>=Data[-<span class="number">3</span>]&nbsp;,&nbsp;&nbsp;&nbsp;</li>
+<li class="">=<span class="number">4</span>=Data[-<span class="number">2</span>]&nbsp;,&nbsp;Data[<span class="number">4</span>]=<span class="number">5</span>=Data[-<span class="number">1</span>].&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">Note: Internal Memory Organization:<br />List do not store the elements directly at the index. In fact a reference is stored at each index which subsequently refers to the object stored somewhere in the memory. This is due to the fact that some objects may be large enough than other objects and hence they are stored at some other memory location.</p>
+<h2 class="h2">Python List Operations</h2>
+<p>Apart from creating and accessing elements from the list, Python allows us to perform various other operations on the list. Some common operations are given below</p>
+<h3 class="h3">a) Adding Python Lists</h3>
+<p>In Python, lists can be added by using the concatenation operator(+) to join two lists.</p>
+<h3 class="h3">Add lists Example 1</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="number">20</span>]&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;list2=[<span class="number">30</span>,<span class="number">40</span>]&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;list3=list1+list2&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;list3&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;[<span class="number">10</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">30</span>,&nbsp;<span class="number">40</span>]&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">Note: '+'operator implies that both the operands passed must be list else error will be shown.</p>
+<h3 class="h3">Add lists Example 2</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&nbsp;list1=[<span class="number">10</span>,<span class="number">20</span>]&nbsp;&nbsp;</li>
+<li class="">list1+<span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;<span class="string">"C:/Python27/lis.py"</span>,&nbsp;line&nbsp;<span class="number">2</span>,&nbsp;<span class="keyword">in</span>&nbsp;&lt;module&gt;&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list1+<span class="number">30</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">b) Python Replicating lists</h3>
+<p>Replicating means repeating, It can be performed by using '*' operator by a specific number of time.</p>
+<h3 class="h3">Python list Replication Example</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="number">20</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1*<span class="number">1</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="number">10</span>,&nbsp;<span class="number">20</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">c)Python List Slicing</h3>
+<p>A subpart of a list can be retrieved on the basis of index. This subpart is known as list slice. This feature allows us to get sub-list of specified start and end index.</p>
+<p><strong>Python List Slicing Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">7</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1[<span class="number">0</span>:<span class="number">2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1[<span class="number">4</span>]&nbsp;&nbsp;</li>
+<li class="">list1[<span class="number">1</span>]=<span class="number">9</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="number">1</span>,&nbsp;<span class="number">2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">7</span>&nbsp;&nbsp;</li>
+<li class="">[<span class="number">1</span>,&nbsp;<span class="number">9</span>,&nbsp;<span class="number">4</span>,&nbsp;<span class="number">5</span>,&nbsp;<span class="number">7</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">Note: If the index provided in the list slice is outside the list, then it raises an IndexError exception.</p>
+<h2 class="h2">Python List Other Operations</h2>
+<p>Apart from above operations various other functions can also be performed on List such as Updating, Appending and Deleting elements from a List.</p>
+<h3 class="h3">Python Updating List</h3>
+<p>To update or change the value of particular index of a list, assign the value to that particular index of the List.</p>
+<p><strong>Python Updating List Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1=[<span class="number">5</span>,<span class="number">10</span>,<span class="number">15</span>,<span class="number">20</span>,<span class="number">25</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Values&nbsp;of&nbsp;list&nbsp;are:&nbsp;"</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="">data1[<span class="number">2</span>]=<span class="string">"Multiple&nbsp;of&nbsp;5"</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Values&nbsp;of&nbsp;list&nbsp;are:&nbsp;"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Values&nbsp;of&nbsp;list&nbsp;are:&nbsp;&nbsp;&nbsp;</li>
+<li class="alt">[<span class="number">5</span>,&nbsp;<span class="number">10</span>,&nbsp;<span class="number">15</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">25</span>]&nbsp;&nbsp;</li>
+<li class="">Values&nbsp;of&nbsp;list&nbsp;are:&nbsp;&nbsp;&nbsp;</li>
+<li class="alt">[<span class="number">5</span>,&nbsp;<span class="number">10</span>,&nbsp;<span class="string">'Multiple&nbsp;of&nbsp;5'</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">25</span>]&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Appending Python List</h3>
+<p>Python provides, append() method which is used to append i.e., add an element at the end of the existing elements.</p>
+<p><strong>Python Append List Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="string">"rahul"</span>,<span class="string">'z'</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Elements&nbsp;of&nbsp;List&nbsp;are:&nbsp;"</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+<li class="">list1.append(<span class="number">10.45</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"List&nbsp;after&nbsp;appending:&nbsp;"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Elements&nbsp;of&nbsp;List&nbsp;are:&nbsp;&nbsp;&nbsp;</li>
+<li class="alt">[<span class="number">10</span>,&nbsp;<span class="string">'rahul'</span>,&nbsp;<span class="string">'z'</span>]&nbsp;&nbsp;</li>
+<li class="">List&nbsp;after&nbsp;appending:&nbsp;&nbsp;&nbsp;</li>
+<li class="alt">[<span class="number">10</span>,&nbsp;<span class="string">'rahul'</span>,&nbsp;<span class="string">'z'</span>,&nbsp;<span class="number">10.45</span>]&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Deleting Elements</h3>
+<p>In Python,&nbsp;<strong>del</strong>&nbsp;statement can be used to delete an element from the list. It can also be used to delete all items from startIndex to endIndex.</p>
+<p><strong>Python delete List Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="string">'rahul'</span>,<span class="number">50.8</span>,<span class="string">'a'</span>,<span class="number">20</span>,<span class="number">30</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">del</span>&nbsp;list1[<span class="number">0</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">del</span>&nbsp;list1[<span class="number">0</span>:<span class="number">3</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="number">10</span>,&nbsp;<span class="string">'rahul'</span>,&nbsp;<span class="number">50.8</span>,&nbsp;<span class="string">'a'</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">30</span>]&nbsp;&nbsp;</li>
+<li class="alt">[<span class="string">'rahul'</span>,&nbsp;<span class="number">50.8</span>,&nbsp;<span class="string">'a'</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">30</span>]&nbsp;&nbsp;</li>
+<li class="">[<span class="number">20</span>,&nbsp;<span class="number">30</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Python lists Method</h2>
+<p>Python provides various Built-in functions and methods for Lists that we can apply on the list.</p>
+<p><strong>Following are the common list functions.</strong></p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>min(list)</td>
+<td>It returns the minimum value from the list given.</td>
+</tr>
+<tr>
+<td>max(list)</td>
+<td>It returns the largest value from the given list.</td>
+</tr>
+<tr>
+<td>len(list)</td>
+<td>It returns number of elements in a list.</td>
+</tr>
+<tr>
+<td>cmp(list1,list2)</td>
+<td>It compares the two list.</td>
+</tr>
+<tr>
+<td>list(sequence)</td>
+<td>It takes sequence types and converts them to lists.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python List min() method Example</strong></p>
+<p>This method is used to get min value from the list.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">101</span>,<span class="number">981</span>,<span class="string">'abcd'</span>,<span class="string">'xyz'</span>,<span class="string">'m'</span>]&nbsp;&nbsp;</li>
+<li class="">list2=[<span class="string">'aman'</span>,<span class="string">'shekhar'</span>,<span class="number">100.45</span>,<span class="number">98.2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Minimum&nbsp;value&nbsp;in&nbsp;List1:&nbsp;"</span>,min(list1)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Minimum&nbsp;value&nbsp;in&nbsp;List2:&nbsp;"</span>,min(list2)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Minimum&nbsp;value&nbsp;<span class="keyword">in</span>&nbsp;List1:&nbsp;&nbsp;<span class="number">101</span>&nbsp;&nbsp;</li>
+<li class="alt">Minimum&nbsp;value&nbsp;<span class="keyword">in</span>&nbsp;List2:&nbsp;&nbsp;<span class="number">98.2</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List max() method Example</strong></p>
+<p>This method is used to get max value from the list.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">101</span>,<span class="number">981</span>,<span class="string">'abcd'</span>,<span class="string">'xyz'</span>,<span class="string">'m'</span>]&nbsp;&nbsp;</li>
+<li class="">list2=[<span class="string">'aman'</span>,<span class="string">'shekhar'</span>,<span class="number">100.45</span>,<span class="number">98.2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Maximum&nbsp;value&nbsp;in&nbsp;List&nbsp;:&nbsp;"</span>,max(list1)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Maximum&nbsp;value&nbsp;in&nbsp;List&nbsp;:&nbsp;"</span>,max(list2)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Maximum&nbsp;value&nbsp;<span class="keyword">in</span>&nbsp;List&nbsp;:&nbsp;&nbsp;xyz&nbsp;&nbsp;</li>
+<li class="alt">Maximum&nbsp;value&nbsp;<span class="keyword">in</span>&nbsp;List&nbsp;:&nbsp;&nbsp;shekhar&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List len() method Example</strong></p>
+<p>This method is used to get length of the the list.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">101</span>,<span class="number">981</span>,<span class="string">'abcd'</span>,<span class="string">'xyz'</span>,<span class="string">'m'</span>]&nbsp;&nbsp;</li>
+<li class="">list2=[<span class="string">'aman'</span>,<span class="string">'shekhar'</span>,<span class="number">100.45</span>,<span class="number">98.2</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"No.&nbsp;of&nbsp;elements&nbsp;in&nbsp;List1:&nbsp;"</span>,len(list1)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"No.&nbsp;of&nbsp;elements&nbsp;in&nbsp;List2:&nbsp;"</span>,len(list2)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">No.&nbsp;of&nbsp;elements&nbsp;<span class="keyword">in</span>&nbsp;List1&nbsp;:&nbsp;&nbsp;<span class="number">5</span>&nbsp;&nbsp;</li>
+<li class="alt">No.&nbsp;of&nbsp;elements&nbsp;<span class="keyword">in</span>&nbsp;List2&nbsp;:&nbsp;&nbsp;<span class="number">4</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List cmp() method Example</strong></p>
+<p>Explanation: If elements are of the same type, perform the comparison and return the result. If elements are different types, check whether they are numbers.</p>
+<ul>
+<li>If numbers, perform comparison.</li>
+<li>If either element is a number, then the other element is returned.</li>
+<li>Otherwise, types are sorted alphabetically .</li>
+</ul>
+<p>If we reached the end of one of the lists, the longer list is "larger." If both list are same it returns 0.</p>
+<p><strong>Python List cmp() method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">101</span>,<span class="number">981</span>,<span class="string">'abcd'</span>,<span class="string">'xyz'</span>,<span class="string">'m'</span>]&nbsp;&nbsp;</li>
+<li class="">list2=[<span class="string">'aman'</span>,<span class="string">'shekhar'</span>,<span class="number">100.45</span>,<span class="number">98.2</span>]&nbsp;&nbsp;</li>
+<li class="alt">list3=[<span class="number">101</span>,<span class="number">981</span>,<span class="string">'abcd'</span>,<span class="string">'xyz'</span>,<span class="string">'m'</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;cmp(list1,list2)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;cmp(list2,list1)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;cmp(list3,list1)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">-<span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">1</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">0</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List list(sequence) method Example</strong></p>
+<p>This method is used to form a list from the given sequence of elements.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">seq=(<span class="number">145</span>,<span class="string">"abcd"</span>,<span class="string">'a'</span>)&nbsp;&nbsp;</li>
+<li class="">data=list(seq)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"List&nbsp;formed&nbsp;is&nbsp;:&nbsp;"</span>,data&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">List&nbsp;formed&nbsp;<span class="keyword">is</span>&nbsp;:&nbsp;&nbsp;[<span class="number">145</span>,&nbsp;<span class="string">'abcd'</span>,&nbsp;<span class="string">'a'</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>There are following built-in methods of List</strong></p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>index(object)</td>
+<td>It returns the index value of the object.</td>
+</tr>
+<tr>
+<td>count(object)</td>
+<td>It returns the number of times an object is repeated in list.</td>
+</tr>
+<tr>
+<td>pop()/pop(index)</td>
+<td>It returns the last object or the specified indexed object. It removes the popped object.</td>
+</tr>
+<tr>
+<td>insert(index,object)</td>
+<td>It inserts an object at the given index.</td>
+</tr>
+<tr>
+<td>extend(sequence)</td>
+<td>It adds the sequence to existing list.</td>
+</tr>
+<tr>
+<td>remove(object)</td>
+<td>It removes the object from the given List.</td>
+</tr>
+<tr>
+<td>reverse()</td>
+<td>It reverses the position of all the elements of a list.</td>
+</tr>
+<tr>
+<td>sort()</td>
+<td>It is used to sort the elements of the List.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python List index() Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data&nbsp;=&nbsp;[<span class="number">786</span>,<span class="string">'abc'</span>,<span class="string">'a'</span>,<span class="number">123.5</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Index&nbsp;of&nbsp;123.5:"</span>,&nbsp;data.index(<span class="number">123.5</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Index&nbsp;of&nbsp;a&nbsp;is"</span>,&nbsp;data.index(<span class="string">'a'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Index&nbsp;of&nbsp;<span class="number">123.5</span>&nbsp;:&nbsp;<span class="number">3</span>&nbsp;&nbsp;</li>
+<li class="alt">Index&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List count(object) Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data&nbsp;=&nbsp;[<span class="number">786</span>,<span class="string">'abc'</span>,<span class="string">'a'</span>,<span class="number">123.5</span>,<span class="number">786</span>,<span class="string">'rahul'</span>,<span class="string">'b'</span>,<span class="number">786</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Number&nbsp;of&nbsp;times&nbsp;123.5&nbsp;occured&nbsp;is"</span>,&nbsp;data.count(<span class="number">123.5</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Number&nbsp;of&nbsp;times&nbsp;786&nbsp;occured&nbsp;is"</span>,&nbsp;data.count(<span class="number">786</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Number&nbsp;of&nbsp;times&nbsp;<span class="number">123.5</span>&nbsp;occured&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="alt">Number&nbsp;of&nbsp;times&nbsp;<span class="number">786</span>&nbsp;occured&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">3</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List pop()/pop(int) Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data&nbsp;=&nbsp;[<span class="number">786</span>,<span class="string">'abc'</span>,<span class="string">'a'</span>,<span class="number">123.5</span>,<span class="number">786</span>]&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Last&nbsp;element&nbsp;is"</span>,&nbsp;data.pop()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"2nd&nbsp;position&nbsp;element:"</span>,&nbsp;data.pop(<span class="number">1</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Last&nbsp;element&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">786</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">2nd</span>&nbsp;position&nbsp;element:abc&nbsp;&nbsp;</li>
+<li class="">[<span class="number">786</span>,&nbsp;<span class="string">'a'</span>,&nbsp;<span class="number">123.5</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List insert(index,object) Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data=[<span class="string">'abc'</span>,<span class="number">123</span>,<span class="number">10.5</span>,<span class="string">'a'</span>]&nbsp;&nbsp;</li>
+<li class="">data.insert(<span class="number">2</span>,<span class="string">'hello'</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="string">'abc'</span>,&nbsp;<span class="number">123</span>,&nbsp;<span class="string">'hello'</span>,&nbsp;<span class="number">10.5</span>,&nbsp;<span class="string">'a'</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List extend(sequence) Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1=[<span class="string">'abc'</span>,<span class="number">123</span>,<span class="number">10.5</span>,<span class="string">'a'</span>]&nbsp;&nbsp;</li>
+<li class="">data2=[<span class="string">'ram'</span>,<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="alt">data1.extend(data2)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data2&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="string">'abc'</span>,&nbsp;<span class="number">123</span>,&nbsp;<span class="number">10.5</span>,&nbsp;<span class="string">'a'</span>,&nbsp;<span class="string">'ram'</span>,&nbsp;<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="alt">[<span class="string">'ram'</span>,&nbsp;<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List remove(object) Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">data1=[<span class="string">'abc'</span>,<span class="number">123</span>,<span class="number">10.5</span>,<span class="string">'a'</span>,<span class="string">'xyz'</span>]&nbsp;&nbsp;</li>
+<li class="">data2=[<span class="string">'ram'</span>,<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class="">data1.remove(<span class="string">'xyz'</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;data1&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data2&nbsp;&nbsp;</li>
+<li class="alt">data2.remove(<span class="string">'ram'</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;data2&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="string">'abc'</span>,&nbsp;<span class="number">123</span>,&nbsp;<span class="number">10.5</span>,&nbsp;<span class="string">'a'</span>,&nbsp;<span class="string">'xyz'</span>]&nbsp;&nbsp;</li>
+<li class="alt">[<span class="string">'abc'</span>,&nbsp;<span class="number">123</span>,&nbsp;<span class="number">10.5</span>,&nbsp;<span class="string">'a'</span>]&nbsp;&nbsp;</li>
+<li class="">[<span class="string">'ram'</span>,&nbsp;<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="alt">[<span class="number">541</span>]&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List reverse() Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span>,<span class="number">50</span>]&nbsp;&nbsp;</li>
+<li class="">list1.reverse()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="number">50</span>,&nbsp;<span class="number">40</span>,&nbsp;<span class="number">30</span>,&nbsp;<span class="number">20</span>,&nbsp;<span class="number">10</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python List sort() Method Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">list1=[<span class="number">10</span>,<span class="number">50</span>,<span class="number">13</span>,<span class="string">'rahul'</span>,<span class="string">'aakash'</span>]&nbsp;&nbsp;</li>
+<li class="">list1.sort()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;list1&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">[<span class="number">10</span>,&nbsp;<span class="number">13</span>,&nbsp;<span class="number">50</span>,&nbsp;<span class="string">'aakash'</span>,&nbsp;<span class="string">'rahul'</span>]&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>

@@ -1,0 +1,423 @@
+<h1 class="h3" style="text-align: center;"><span style="color: #008000;">DEFINING FUNCTIONS</span></h1>
+<h3 class="h3">Types of Functions:</h3>
+<p>There are two types of Functions.</p>
+<p>a) Built-in Functions: Functions that are predefined and organized into a library. We have used many predefined functions in Python.</p>
+<p>b) User- Defined: Functions that are created by the programmer to meet the requirements.</p>
+<h2 class="h2">Defining a Function</h2>
+<p>A Function defined in Python should follow the following format:</p>
+<p>1) Keyword&nbsp;<strong>def</strong>&nbsp;is used to start and declare a function. Def specifies the starting of function block.</p>
+<p>2) def is followed by function-name followed by parenthesis.</p>
+<p>3) Parameters are passed inside the parenthesis. At the end a colon is marked.</p>
+<p><strong>Python Function Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;&lt;function_name&gt;(parameters):&nbsp;&nbsp;</li>
+<li class="">&lt;/function_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Example</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;sum(a,b):&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>4) Python code requires indentation (space) of code to keep it associate to the declared block.</p>
+<p>5) The first statement of the function is optional. It is ?Documentation string? of function.</p>
+<p>6) Following is the statement to be executed.</p>
+<p><strong>Syntax:</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/pythonfunctionsyntax1.png" alt="write python code" />&nbsp;<img src="https://www.javatpoint.com/python/images/pythonfunctionsyntax2.png" alt="write python code" /></p>
+<h2 class="h2">Invoking a Python Function</h2>
+<p>To execute a function it needs to be called. This is called function calling.</p>
+<p>Function Definition provides the information about function name, parameters and the definition what operation is to be performed. In order to execute the function definition, we need to call the function.</p>
+<p><strong>Python Function Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&lt;function_name&gt;(parameters)&nbsp;&nbsp;</li>
+<li class="">&lt;/function_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python Function Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">sum(a,b)&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Here, sum is the function and a, b are the parameters passed to the function definition.</p>
+<p>Let?s have a look over an example.</p>
+<p><strong>Python Function Example 2</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Providing&nbsp;Function&nbsp;Definition</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;sum(x,y):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Going&nbsp;to&nbsp;add&nbsp;x&nbsp;and&nbsp;y"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=x+y&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Sum&nbsp;of&nbsp;two&nbsp;numbers&nbsp;is"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;s&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">#Calling&nbsp;the&nbsp;sum&nbsp;Function</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(<span class="number">10</span>,<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(<span class="number">20</span>,<span class="number">30</span>)&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Sum&nbsp;of&nbsp;two&nbsp;numbers&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="">Sum&nbsp;of&nbsp;two&nbsp;numbers&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">50</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">NOTE: Function call will be executed in the order in which it is called.</p>
+<h2 class="h2">Python Function return Statement</h2>
+<p>return[expression] is used to return response to the caller function. We can use expression with the return keyword. send back the control to the caller with the expression.</p>
+<p>In case no expression is given after return it will return None.</p>
+<p>In other words return statement is used to exit the function definition.</p>
+<h3 class="h3">Python Function return Example</h3>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;sum(a,b):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Adding&nbsp;the&nbsp;two&nbsp;values"</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Printing&nbsp;within&nbsp;Function"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;<span class="keyword">print</span>&nbsp;a+b&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;a+b&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;msg():&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Hello"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class="">total=sum(<span class="number">10</span>,<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;?Printing&nbsp;Outside:&nbsp;?,total&nbsp;&nbsp;</li>
+<li class="">msg()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Rest&nbsp;of&nbsp;code"</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Printing&nbsp;within&nbsp;Function&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="">Printing&nbsp;outside:&nbsp;&nbsp;<span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="alt">Hello&nbsp;&nbsp;</li>
+<li class="">Rest&nbsp;of&nbsp;code&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Python Function Argument and Parameter</h2>
+<p>There can be two types of data passed in the function.</p>
+<p>1) The First type of data is the data passed in the function call. This data is called ?arguments?.</p>
+<p>2) The second type of data is the data received in the function definition. This data is called ?parameters?.</p>
+<p>Arguments can be literals, variables and expressions. Parameters must be variable to hold incoming values.</p>
+<p>Alternatively, arguments can be called as actual parameters or actual arguments and parameters can be called as formal parameters or formal arguments.</p>
+<p><strong>Python Function Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;addition(x,y):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;x+y&nbsp;&nbsp;</li>
+<li class="alt">x=<span class="number">15</span>&nbsp;&nbsp;</li>
+<li class="">addition(x&nbsp;,<span class="number">10</span>)&nbsp;&nbsp;</li>
+<li class="alt">addition(x,x)&nbsp;&nbsp;</li>
+<li class="">y=<span class="number">20</span>&nbsp;&nbsp;</li>
+<li class="alt">addition(x,y)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">25</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">30</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">35</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Passing Parameters</h2>
+<p>Apart from matching the parameters, there are other ways of matching the parameters.</p>
+<p>Python supports following types of formal argument:</p>
+<p>1) Positional argument (Required argument).</p>
+<p>2) Default argument.</p>
+<p>3) Keyword argument (Named argument)</p>
+<p><strong>Positional/Required Arguments:</strong></p>
+<p>When the function call statement must match the number and order of arguments as defined in the function definition. It is Positional Argument matching.</p>
+<p><strong>Python Function Positional Argument Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Function&nbsp;definition&nbsp;of&nbsp;sum&nbsp;</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;sum(a,b):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Function&nbsp;having&nbsp;two&nbsp;parameters"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c=a+b&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;c&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt">sum(<span class="number">10</span>,<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="">sum(<span class="number">20</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class="">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;<span class="string">"C:/Python27/su.py"</span>,&nbsp;line&nbsp;<span class="number">8</span>,&nbsp;<span class="keyword">in</span>&nbsp;&lt;module&gt;&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum(<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="alt">TypeError:&nbsp;sum()&nbsp;takes&nbsp;exactly&nbsp;<span class="number">2</span>&nbsp;arguments&nbsp;(<span class="number">1</span>&nbsp;given)&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+<li class="alt">&lt;/module&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>1) In the first case, when sum() function is called passing two values i.e., 10 and 20 it matches with function definition parameter and hence 10 and 20 is assigned to a and b respectively. The sum is calculated and printed.</p>
+<p>2) In the second case, when sum() function is called passing a single value i.e., 20 , it is passed to function definition. Function definition accepts two parameters whereas only one value is being passed, hence it will show an error.</p>
+<h2 class="h2">Python Function Default Arguments</h2>
+<p>Default Argument is the argument which provides the default values to the parameters passed in the function definition, in case value is not provided in the function call default value is used.</p>
+<p><strong>Python Function Default Argument Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Function&nbsp;Definition</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;msg(Id,Name,Age=<span class="number">21</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Printing&nbsp;the&nbsp;passed&nbsp;value"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;Id&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;Name&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;Age&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#Function&nbsp;call</span>&nbsp;&nbsp;</li>
+<li class="alt">msg(Id=<span class="number">100</span>,Name=<span class="string">'Ravi'</span>,Age=<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="">msg(Id=<span class="number">101</span>,Name=<span class="string">'Ratan'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt">Ravi&nbsp;&nbsp;</li>
+<li class=""><span class="number">20</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">101</span>&nbsp;&nbsp;</li>
+<li class="">Ratan&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">21</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>1) In first case, when msg() function is called passing three different values i.e., 100 , Ravi and 20, these values will be assigned to respective parameters and thus respective values will be printed.</p>
+<p>2) In second case, when msg() function is called passing two values i.e., 101 and Ratan, these values will be assigned to Id and Name respectively. No value is assigned for third argument via function call and hence it will retain its default value i.e, 21.</p>
+<h2 class="h2">Python Keyword Arguments</h2>
+<p>Using the Keyword Argument, the argument passed in function call is matched with function definition on the basis of the name of the parameter.</p>
+<p><strong>Python keyword Argument Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg(id,name):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Printing&nbsp;passed&nbsp;value"</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;id&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;name&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="">msg(id=<span class="number">100</span>,name=<span class="string">'Raj'</span>)&nbsp;&nbsp;</li>
+<li class="alt">msg(name=<span class="string">'Rahul'</span>,id=<span class="number">101</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt">Raj&nbsp;&nbsp;</li>
+<li class=""><span class="number">101</span>&nbsp;&nbsp;</li>
+<li class="alt">Rahul&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>1) In the first case, when msg() function is called passing two values i.e., id and name the position of parameter passed is same as that of function definition and hence values are initialized to respective parameters in function definition. This is done on the basis of the name of the parameter.</p>
+<p>2) In second case, when msg() function is called passing two values i.e., name and id, although the position of two parameters is different it initialize the value of id in Function call to id in Function Definition. same with name parameter. Hence, values are initialized on the basis of name of the parameter.</p>
+<h2 class="h2">Python Anonymous Function</h2>
+<p>Anonymous Functions are the functions that are not bond to name. It means anonymous function does not has a name.</p>
+<p>Anonymous Functions are created by using a keyword "lambda".</p>
+<p>Lambda takes any number of arguments and returns an evaluated expression.</p>
+<p>Lambda is created without using the def keyword.</p>
+<p><strong>Python Anonymous Function Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">lambda</span>&nbsp;arg1,args2,args3,?,argsn&nbsp;:expression&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python Anonymous Function Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Function&nbsp;Definiton</span>&nbsp;&nbsp;</li>
+<li class="">square=<span class="keyword">lambda</span>&nbsp;x1:&nbsp;x1*x1&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#Calling&nbsp;square&nbsp;as&nbsp;a&nbsp;function</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Square&nbsp;of&nbsp;number&nbsp;is"</span>,square(<span class="number">10</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Square&nbsp;of&nbsp;number&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Difference between Normal Functions and Anonymous Function:</h2>
+<p>Have a look over two examples:</p>
+<p><strong>Example:</strong></p>
+<p>Normal function:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Function&nbsp;Definiton</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;square(x):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;x*x&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li class="alt"><span class="comment">#Calling&nbsp;square&nbsp;function</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Square&nbsp;of&nbsp;number&nbsp;is"</span>,square(<span class="number">10</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Anonymous function:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="comment">#Function&nbsp;Definiton</span>&nbsp;&nbsp;</li>
+<li class="">square=<span class="keyword">lambda</span>&nbsp;x1:&nbsp;x1*x1&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class=""><span class="comment">#Calling&nbsp;square&nbsp;as&nbsp;a&nbsp;function</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Square&nbsp;of&nbsp;number&nbsp;is"</span>,square(<span class="number">10</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>Anonymous is created without using def keyword.</p>
+<p>lambda keyword is used to create anonymous function.</p>
+<p>It returns the evaluated expression.</p>
+<h2 class="h2">Scope of Variable:</h2>
+<p>Scope of a variable can be determined by the part in which variable is defined. Each variable cannot be accessed in each part of a program. There are two types of variables based on Scope:</p>
+<p>1) Local Variable.</p>
+<p>2) Global Variable.</p>
+<p><strong>1) Python Local Variables</strong></p>
+<p>Variables declared inside a function body is known as Local Variable. These have a local access thus these variables cannot be accessed outside the function body in which they are declared.</p>
+<p><strong>Python Local Variables Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a=<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Value&nbsp;of&nbsp;a&nbsp;is"</span>,a&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class="">msg()&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;a&nbsp;<span class="comment">#it&nbsp;will&nbsp;show&nbsp;error&nbsp;since&nbsp;variable&nbsp;is&nbsp;local</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class="">Traceback&nbsp;(most&nbsp;recent&nbsp;call&nbsp;last):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;<span class="string">"C:/Python27/lam.py"</span>,&nbsp;line&nbsp;<span class="number">7</span>,&nbsp;<span class="keyword">in</span>&nbsp;&lt;module&gt;&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;a&nbsp;<span class="comment">#it&nbsp;will&nbsp;show&nbsp;error&nbsp;since&nbsp;variable&nbsp;is&nbsp;local</span>&nbsp;&nbsp;</li>
+<li class="alt">NameError:&nbsp;name&nbsp;<span class="string">'a'</span>&nbsp;<span class="keyword">is</span>&nbsp;<span class="keyword">not</span>&nbsp;defined&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+<li class="alt">&lt;/module&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>b) Python Global Variable</strong></p>
+<p>Variable defined outside the function is called Global Variable. Global variable is accessed all over program thus global variable have widest accessibility.</p>
+<p><strong>Python Global Variable Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">b=<span class="number">20</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">def</span>&nbsp;msg():&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a=<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Value&nbsp;of&nbsp;a&nbsp;is"</span>,a&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Value&nbsp;of&nbsp;b&nbsp;is"</span>,b&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg()&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;b&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt">Value&nbsp;of&nbsp;b&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">20</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">20</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>

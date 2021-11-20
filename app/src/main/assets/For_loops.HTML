@@ -1,0 +1,278 @@
+<h1 style="text-align: center;">For Loop</h1>
+<p>Python&nbsp;<strong>for loop</strong>&nbsp;is used to iterate the elements of a collection in the order that they appear. This collection can be a sequence(list or string).</p>
+<p><strong>Python For Loop Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;&lt;variable&gt;&nbsp;<span class="keyword">in</span>&nbsp;&lt;sequence&gt;:&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="number">1</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">7</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">9</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>Firstly, the first value will be assigned in the variable.</li>
+<li>Secondly all the statements in the body of the loop are executed with the same value.</li>
+<li>Thirdly, once step second is completed then variable is assigned the next value in the sequence and step second is repeated.</li>
+<li>Finally, it continues till all the values in the sequence are assigned in the variable and processed.</li>
+</ul>
+<p><strong>Python For Loop Simple Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">num=<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">for</span>&nbsp;a&nbsp;<span class="keyword">in</span>&nbsp;range&nbsp;(<span class="number">1</span>,<span class="number">6</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;&nbsp;num&nbsp;*&nbsp;a&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="number">2</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">4</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">6</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">8</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">10</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python Example to Find Sum of 10 Numbers</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">sum=<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">for</span>&nbsp;n&nbsp;<span class="keyword">in</span>&nbsp;range(<span class="number">1</span>,<span class="number">11</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;sum+=n&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;sum&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="number">55</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Python Nested For Loops</h2>
+<p>Loops defined within another Loop are called Nested Loops. Nested loops are used to iterate matrix elements or to perform complex computation.</p>
+<p>When an outer loop contains an inner loop in its body it is called Nested Looping.</p>
+<p><strong>Python Nested For Loop Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;&nbsp;&lt;expression&gt;:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>&nbsp;&lt;expression&gt;:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python Nested For Loop Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;i&nbsp;<span class="keyword">in</span>&nbsp;range(<span class="number">1</span>,<span class="number">6</span>):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>&nbsp;j&nbsp;<span class="keyword">in</span>&nbsp;range&nbsp;(<span class="number">1</span>,i+<span class="number">1</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;i,&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">1</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">2</span>&nbsp;<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">3</span>&nbsp;<span class="number">3</span>&nbsp;<span class="number">3</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">4</span>&nbsp;<span class="number">4</span>&nbsp;<span class="number">4</span>&nbsp;<span class="number">4</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">5</span>&nbsp;<span class="number">5</span>&nbsp;<span class="number">5</span>&nbsp;<span class="number">5</span>&nbsp;<span class="number">5</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>For each value of Outer loop the whole inner loop is executed.</p>
+<p>For each value of inner loop the Body is executed each time.</p>
+<p><strong>Python Nested Loop Example 2</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;i&nbsp;<span class="keyword">in</span>&nbsp;range&nbsp;(<span class="number">1</span>,<span class="number">6</span>):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span>&nbsp;j&nbsp;<span class="keyword">in</span>&nbsp;range&nbsp;(<span class="number">5</span>,i-<span class="number">1</span>,-<span class="number">1</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"*"</span>,&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;</li>
+<li class="alt">*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;</li>
+<li class="">*&nbsp;*&nbsp;*&nbsp;&nbsp;</li>
+<li class="alt">*&nbsp;*&nbsp;&nbsp;</li>
+<li class="">*&nbsp;&nbsp;</li>
+</ol>
+<p>&nbsp;</p>
+<h1 class="h1">Python While Loop</h1>
+<p>In Python, while loop is used to execute number of statements or body till the specified condition is true. Once the condition is false, the control will come out of the loop.</p>
+<p><strong>Python While Loop Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">while</span>&nbsp;&lt;expression&gt;:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Here, loop Body will execute till the expression passed is true. The Body may be a single statement or multiple statement.</p>
+<p><strong>Python While Loop Example 1</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">a=<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">while</span>&nbsp;a&gt;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Value&nbsp;of&nbsp;a&nbsp;is"</span>,a&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;a=a-<span class="number">2</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>print "Loop is Completed"</p>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">8</span>&nbsp;&nbsp;</li>
+<li class="">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">6</span>&nbsp;&nbsp;</li>
+<li class="alt">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">4</span>&nbsp;&nbsp;</li>
+<li class="">Value&nbsp;of&nbsp;a&nbsp;<span class="keyword">is</span>&nbsp;<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class="alt">Loop&nbsp;<span class="keyword">is</span>&nbsp;Completed&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li>Firstly, the value in the variable is initialized.</li>
+<li>Secondly, the condition/expression in the while is evaluated. Consequently if condition is true, the control enters in the body and executes all the statements . If the condition/expression passed results in false then the control exists the body and straight away control goes to next instruction after body of while.</li>
+<li>Thirdly, in case condition was true having completed all the statements, the variable is incremented or decremented. Having changed the value of variable step second is followed. This process continues till the expression/condition becomes false.</li>
+<li>Finally Rest of code after body is executed.</li>
+</ul>
+<p><strong>Python While Loop Example 2</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">n=<span class="number">153</span>&nbsp;&nbsp;</li>
+<li class="">sum=<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">while</span>&nbsp;n&gt;<span class="number">0</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;r=n%<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;sum+=r&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;n=n/<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;sum&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">9</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+<p>&nbsp;</p>
+<h1 class="h1">Python Break</h1>
+<p>Break statement is a jump statement which is used to transfer execution control. It breaks the current execution and in case of inner loop, inner loop terminates immediately.</p>
+<p>When break statement is applied the control points to the line following the body of the loop, hence applying break statement makes the loop to terminate and controls goes to next line pointing after loop body.</p>
+<p><strong>Python Break Example 1</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;i&nbsp;<span class="keyword">in</span>&nbsp;[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;i==<span class="number">4</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Element&nbsp;found"</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;i,&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">1</span>&nbsp;<span class="number">2</span>&nbsp;<span class="number">3</span>&nbsp;Element&nbsp;found&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python Break Example 2</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">for</span>&nbsp;letter&nbsp;<span class="keyword">in</span>&nbsp;<span class="string">'Python3'</span>:&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span>&nbsp;letter&nbsp;==&nbsp;<span class="string">'o'</span>:&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;(letter)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">P&nbsp;&nbsp;</li>
+<li class="">y&nbsp;&nbsp;</li>
+<li class="alt">t&nbsp;&nbsp;</li>
+<li class="">h&nbsp; &nbsp;</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

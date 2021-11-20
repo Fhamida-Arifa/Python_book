@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Python Book</string>
+    <string name="assets">file://android_asset/</string>
+</resources>

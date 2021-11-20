@@ -1,0 +1,713 @@
+<h1 style="text-align: center;"><span style="color: #00ff00;">STRINGS</span></h1>
+<p>Python string is a built-in type text sequence. It is used to handle textual data in python. Python Strings are immutable sequences of Unicode points. Creating Strings are simplest and easy to use in Python.</p>
+<p>We can simply create Python String by enclosing a text in single as well as double quotes. Python treat both single and double quotes statements same.</p>
+<h2 class="h2">Accessing Python Strings</h2>
+<ul>
+<li>In Python, Strings are stored as individual characters in a contiguous memory location.</li>
+<li>The benefit of using String is that it can be accessed from both the directions (forward and backward).</li>
+<li>Both forward as well as backward indexing are provided using Strings in Python.
+<ul>
+<li>Forward indexing starts with 0,1,2,3,....</li>
+<li>Backward indexing starts with -1,-2,-3,-4,....</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example</strong></p>
+<p><img src="https://www.javatpoint.com/python/images/pythonstring1.png" alt="python string" /></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">str[<span class="number">0</span>]=<span class="string">'P'</span>=str[-<span class="number">6</span>]&nbsp;,&nbsp;str[<span class="number">1</span>]=<span class="string">'Y'</span>&nbsp;=&nbsp;str[-<span class="number">5</span>]&nbsp;&nbsp;,&nbsp;&nbsp;str[<span class="number">2</span>]&nbsp;=&nbsp;<span class="string">'T'</span>&nbsp;=&nbsp;str[-<span class="number">4</span>]&nbsp;&nbsp;,&nbsp;&nbsp;str[<span class="number">3</span>]&nbsp;=&nbsp;<span class="string">'H'</span>&nbsp;=&nbsp;str[-<span class="number">3</span>]&nbsp;&nbsp;</li>
+<li class="">str[<span class="number">4</span>]&nbsp;=&nbsp;<span class="string">'O'</span>&nbsp;=&nbsp;str[-<span class="number">2</span>]&nbsp;&nbsp;,&nbsp;&nbsp;str[<span class="number">5</span>]&nbsp;=&nbsp;<span class="string">'N'</span>&nbsp;=&nbsp;str[-<span class="number">1</span>].&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Python String Example</h3>
+<p>Here, we are creating a simple program to retrieve String in reverse as well as normal form.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">name=<span class="string">"Rajat"</span>&nbsp;&nbsp;</li>
+<li class="">length=len(name)&nbsp;&nbsp;</li>
+<li class="alt">i=<span class="number">0</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">for</span>&nbsp;n&nbsp;<span class="keyword">in</span>&nbsp;range(-<span class="number">1</span>,(-length-<span class="number">1</span>),-<span class="number">1</span>):&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;name[i],<span class="string">"\t"</span>,name[n]&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;i+=<span class="number">1</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+R 	t
+a 	a
+j 	j
+a 	a
+t 	R
+&gt;&gt;&gt;
+</pre>
+</div>
+<h2 class="h2">Python Strings Operators</h2>
+<p>To perform operation on string, Python provides basically 3 types of Operators that are given below.</p>
+<ol>
+<li>Basic Operators.</li>
+<li>Membership Operators.</li>
+<li>Relational Operators.</li>
+</ol>
+<h3 class="h3">Python String Basic Operators</h3>
+<p>There are two types of basic operators in String "+" and "*".</p>
+<h4 class="h4">String Concatenation Operator (+)</h4>
+<p>The concatenation operator (+) concatenates two Strings and creates a new String.</p>
+<h4 class="h4">Python String Concatenation Example</h4>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; "ratan" + "jaiswal"
+</pre>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>'ratanjaiswal'
+&gt;&gt;&gt;
+</pre>
+</div>
+<p>&nbsp;</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Expression</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>'10' + '20'</td>
+<td>'1020'</td>
+</tr>
+<tr>
+<td>"s" + "007"</td>
+<td>'s007'</td>
+</tr>
+<tr>
+<td>'abcd123' + 'xyz4'</td>
+<td>'abcd123xyz4'</td>
+</tr>
+</tbody>
+</table>
+<p class="n">NOTE: Both the operands passed for concatenation must be of same type, else it will show an error.</p>
+<p><strong>Eg:</strong></p>
+<div class="codeblock3">
+<pre>'abc' + 3
+&gt;&gt;&gt;
+</pre>
+</div>
+<p><strong>output:</strong></p>
+<div class="codeblock3">
+<pre>Traceback (most recent call last):
+  File "&lt;pyshell#5&gt;", line 1, in 
+    'abc' + 3
+TypeError: cannot concatenate 'str' and 'int' objects
+&gt;&gt;&gt;
+&lt;/pyshell#5&gt;</pre>
+</div>
+<h3 class="h3">Python String Replication Operator (*)</h3>
+<p>Replication operator uses two parameters for operation, One is the integer value and the other one is the String argument.</p>
+<p>The Replication operator is used to repeat a string number of times. The string will be repeated the number of times which is given by the integer value.</p>
+<p><strong>Python String Replication Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;<span class="number">5</span>*<span class="string">"Vimal"</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>'VimalVimalVimalVimalVimal'
+</pre>
+</div>
+<p>&nbsp;</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Expression</th>
+<th>Output</th>
+</tr>
+<tr>
+<td>"soono"*2</td>
+<td>'soonosoono'</td>
+</tr>
+<tr>
+<td>3*'1'</td>
+<td>'111'</td>
+</tr>
+<tr>
+<td>'$'*5</td>
+<td>'$$$$$'</td>
+</tr>
+</tbody>
+</table>
+<p class="n">NOTE: We can use Replication operator in any way i.e., int * string or string * int. Both the parameters passed cannot be of same type.</p>
+<h3 class="h3">Python String Membership Operators</h3>
+<p>Membership Operators are already discussed in the Operators section. Let see with context of String.</p>
+<p><strong>There are two types of Membership operators</strong></p>
+<p><strong>1) in:</strong>"in" operator returns true if a character or the entire substring is present in the specified string, otherwise false.</p>
+<p><strong>2) not in:</strong>"not in" operator returns true if a character or entire substring does not exist in the specified string, otherwise false.</p>
+<h4 class="h4">Python String membership operator Example</h4>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;str1=<span class="string">"javatpoint"</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str2=<span class="string">'sssit'</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;str3=<span class="string">"seomount"</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str4=<span class="string">'java'</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;st5=<span class="string">"it"</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str6=<span class="string">"seo"</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;str4&nbsp;<span class="keyword">in</span>&nbsp;str1&nbsp;&nbsp;</li>
+<li class=""><span class="special">True</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;str5&nbsp;<span class="keyword">in</span>&nbsp;str2&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;st5&nbsp;<span class="keyword">in</span>&nbsp;str2&nbsp;&nbsp;</li>
+<li class="alt"><span class="special">True</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str6&nbsp;<span class="keyword">in</span>&nbsp;str3&nbsp;&nbsp;</li>
+<li class="alt"><span class="special">True</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str4&nbsp;<span class="keyword">not</span>&nbsp;<span class="keyword">in</span>&nbsp;str1&nbsp;&nbsp;</li>
+<li class="alt"><span class="special">False</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str1&nbsp;<span class="keyword">not</span>&nbsp;<span class="keyword">in</span>&nbsp;str4&nbsp;&nbsp;</li>
+<li class="alt"><span class="special">True</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Python Relational Operators</h3>
+<p>All the comparison (relational) operators i.e., (&lt;,&gt;&lt;=,&gt;=,==,!=,&lt;&gt;) are also applicable for strings. The Strings are compared based on the ASCII value or Unicode(i.e., dictionary Order).</p>
+<p><strong>Python Relational Operators Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;<span class="string">"RAJAT"</span>==<span class="string">"RAJAT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="special">True</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;<span class="string">"afsha"</span>&gt;=<span class="string">'Afsha'</span>&nbsp;&nbsp;</li>
+<li class=""><span class="special">True</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;<span class="string">"Z"</span>&lt;&gt;<span class="string">"z"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="special">True</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Explanation:</strong></p>
+<p>The ASCII value of a is 97, b is 98, c is 99 and so on. The ASCII value of A is 65,B is 66,C is 67 and so on. The comparison between strings are done on the basis on ASCII value.</p>
+<h3 class="h3">Python String Slice Notation</h3>
+<p>Python String slice can be defined as a substring which is the part of the string. Therefore further substring can be obtained from a string.</p>
+<p>There can be many forms to slice a string, as string can be accessed or indexed from both the direction and hence string can also be sliced from both the directions.</p>
+<p><strong>Python String Slice Syntax</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&lt;string_name&gt;[startIndex:endIndex],&nbsp;&nbsp;</li>
+<li class="">&lt;string_name&gt;[:endIndex],&nbsp;&nbsp;</li>
+<li class="alt">&lt;string_name&gt;[startIndex:]&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h4 class="h4">Python String Slice Example 1</h4>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;str=<span class="string">"Nikhil"</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[<span class="number">0</span>:<span class="number">6</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'Nikhil'</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[<span class="number">0</span>:<span class="number">3</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'Nik'</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[<span class="number">2</span>:<span class="number">5</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'khi'</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[:<span class="number">6</span>]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'Nikhil'</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[<span class="number">3</span>:]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'hil'</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">Note: startIndex in String slice is inclusive whereas endIndex is exclusive.</p>
+<p>String slice can also be used with Concatenation operator to get whole string.</p>
+<p><strong>Python String Slice Example 2</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;str=<span class="string">"Mahesh"</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;str[:<span class="number">6</span>]+str[<span class="number">6</span>:]&nbsp;&nbsp;</li>
+<li class="alt"><span class="string">'Mahesh'</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>//here 6 is the length of the string.</p>
+<h2 class="h2">Python String Functions and Methods</h2>
+<p>Python provides various predefined or built-in string functions. They are as follows:</p>
+<table class="alt">
+<tbody>
+<tr>
+<td>capitalize()</td>
+<td>It capitalizes the first character of the String.</td>
+</tr>
+<tr>
+<td>count(string,begin,end)</td>
+<td>It Counts number of times substring occurs in a String between begin and end index.</td>
+</tr>
+<tr>
+<td>endswith(suffix ,begin=0,end=n)</td>
+<td>It returns a Boolean value if the string terminates with given suffix between begin and end.</td>
+</tr>
+<tr>
+<td>find(substring ,beginIndex, endIndex)</td>
+<td>It returns the index value of the string where substring is found between begin index and end index.</td>
+</tr>
+<tr>
+<td>index(subsring, beginIndex, endIndex)</td>
+<td>It throws an exception if string is not found and works same as find() method.</td>
+</tr>
+<tr>
+<td>isalnum()</td>
+<td>It returns True if characters in the string are alphanumeric i.e., alphabets or numbers and there is at least 1 character. Otherwise it returns False.</td>
+</tr>
+<tr>
+<td>isalpha()</td>
+<td>It returns True when all the characters are alphabets and there is at least one character, otherwise False.</td>
+</tr>
+<tr>
+<td>isdigit()</td>
+<td>It returns True if all the characters are digit and there is at least one character, otherwise False.</td>
+</tr>
+<tr>
+<td>islower()</td>
+<td>It returns True if the characters of a string are in lower case, otherwise False.</td>
+</tr>
+<tr>
+<td>isupper()</td>
+<td>It returns False if characters of a string are in Upper case, otherwise False.</td>
+</tr>
+<tr>
+<td>isspace()</td>
+<td>It returns True if the characters of a string are whitespace, otherwise false.</td>
+</tr>
+<tr>
+<td>len(string)</td>
+<td>It returns the length of a string.</td>
+</tr>
+<tr>
+<td>lower()</td>
+<td>It converts all the characters of a string to Lower case.</td>
+</tr>
+<tr>
+<td>upper()</td>
+<td>It converts all the characters of a string to Upper Case.</td>
+</tr>
+<tr>
+<td>startswith(str ,begin=0,end=n)</td>
+<td>It returns a Boolean value if the string starts with given str between begin and end.</td>
+</tr>
+<tr>
+<td>swapcase()</td>
+<td>It inverts case of all characters in a string.</td>
+</tr>
+<tr>
+<td>lstrip()</td>
+<td>It removes all leading whitespace of a string and can also be used to remove particular character from leading.</td>
+</tr>
+<tr>
+<td>rstrip()</td>
+<td>It removes all trailing whitespace of a string and can also be used to remove particular character from trailing.</td>
+</tr>
+</tbody>
+</table>
+<h3 class="h3">Python String capitalize() Method Example</h3>
+<p>This method capitalizes the first character of the String.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;<span class="string">'abc'</span>.capitalize()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>'Abc'
+</pre>
+</div>
+<h3 class="h3">Python String count(string) Method Example</h3>
+<p>This method counts number of times substring occurs in a String between begin and end index.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">msg&nbsp;=&nbsp;<span class="string">"welcome&nbsp;to&nbsp;sssit"</span>;&nbsp;&nbsp;</li>
+<li class="">substr1&nbsp;=&nbsp;<span class="string">"o"</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;&nbsp;msg.count(substr1,&nbsp;<span class="number">4</span>,&nbsp;<span class="number">16</span>)&nbsp;&nbsp;</li>
+<li class="">substr2&nbsp;=&nbsp;<span class="string">"t"</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;&nbsp;msg.count(substr2)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+2
+2
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String endswith(string) Method Example</h3>
+<p>This method returns a Boolean value if the string terminates with given suffix between begin and end.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Welcome&nbsp;to&nbsp;SSSIT"</span>;&nbsp;&nbsp;</li>
+<li class="">substring1=<span class="string">"SSSIT"</span>;&nbsp;&nbsp;</li>
+<li class="alt">substring2=<span class="string">"to"</span>;&nbsp;&nbsp;</li>
+<li class="">substring3=<span class="string">"of"</span>;&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;string1.endswith(substring1);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.endswith(substring2,<span class="number">2</span>,<span class="number">16</span>);&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;string1.endswith(substring3,<span class="number">2</span>,<span class="number">19</span>);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.endswith(substring3);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+True
+False
+False
+False
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String find(string) Method Example</h3>
+<p>This method returns the index value of the string where substring is found between begin index and end index.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">str=<span class="string">"Welcome&nbsp;to&nbsp;SSSIT"</span>;&nbsp;&nbsp;</li>
+<li class="">substr1=<span class="string">"come"</span>;&nbsp;&nbsp;</li>
+<li class="alt">substr2=<span class="string">"to"</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str.find(substr1);&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;str.find(substr2);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str.find(substr1,<span class="number">3</span>,<span class="number">10</span>);&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;str.find(substr2,<span class="number">19</span>);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+3
+8
+3
+-1
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String index() Method Example</h3>
+<p>This method returns the index value of the string where substring is found between begin index and end index.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">str=<span class="string">"Welcome&nbsp;to&nbsp;world&nbsp;of&nbsp;SSSIT"</span>;&nbsp;&nbsp;</li>
+<li class="">substr1=<span class="string">"come"</span>;&nbsp;&nbsp;</li>
+<li class="alt">substr2=<span class="string">"of"</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str.index(substr1);&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;str.index(substr2);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str.index(substr1,<span class="number">3</span>,<span class="number">10</span>);&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;str.index(substr2,<span class="number">19</span>);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+3
+17
+3
+Traceback (most recent call last):
+  File "C:/Python27/fin.py", line 7, in 
+    print str.index(substr2,19);
+ValueError: substring not found
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String isalnum() Method Example</h3>
+<p>This method returns True if characters in the string are alphanumeric i.e., alphabets or numbers and there is at least 1 character. Otherwise it returns False.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">str=<span class="string">"Welcome&nbsp;to&nbsp;sssit"</span>;&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;str.isalnum();&nbsp;&nbsp;</li>
+<li class="alt">str1=<span class="string">"Python47"</span>;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;str1.isalnum();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+False
+True
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String isalpha() Method Example</h3>
+<p>It returns True when all the characters are alphabets and there is at least one character, otherwise False.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"HelloPython"</span>;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">#&nbsp;Even&nbsp;space&nbsp;is&nbsp;not&nbsp;allowed</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.isalpha();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"This&nbsp;is&nbsp;Python2.7.4"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.isalpha();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+True
+False
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String isdigit() Method Example</h3>
+<p>This method returns True if all the characters are digit and there is at least one character, otherwise False.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"HelloPython"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.isdigit();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"98564738"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.isdigit();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+False
+True
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String islower() Method Example</h3>
+<p>This method returns True if the characters of a string are in lower case, otherwise False.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.islower();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"welcome&nbsp;to&nbsp;"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.islower();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+False
+True
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String isupper() Method Example</h3>
+<p>This method returns False if characters of a string are in Upper case, otherwise False.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.isupper();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"WELCOME&nbsp;TO"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.isupper();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+False
+True
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String isspace() Method Example</h3>
+<p>This method returns True if the characters of a string are whitespace, otherwise false.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"&nbsp;&nbsp;&nbsp;&nbsp;"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.isspace();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"WELCOME&nbsp;TO&nbsp;WORLD&nbsp;OF&nbsp;PYT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.isspace();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+True
+False
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String len(string) Method Example</h3>
+<p>This method returns the length of a string.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"&nbsp;&nbsp;&nbsp;&nbsp;"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;len(string1);&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"WELCOME&nbsp;TO&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;len(string2);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+4
+16
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String lower() Method Example</h3>
+<p>It converts all the characters of a string to Lower case.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.lower();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"WELCOME&nbsp;TO&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.lower();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+hello python
+welcome to sssit
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String upper() Method Example</h3>
+<p>This method converts all the characters of a string to upper case.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.upper();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"welcome&nbsp;to&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.upper();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+HELLO PYTHON
+WELCOME TO SSSIT
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String startswith(string) Method Example</h3>
+<p>This method returns a Boolean value if the string starts with given str between begin and end.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.startswith(<span class="string">'Hello'</span>);&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"welcome&nbsp;to&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.startswith(<span class="string">'come'</span>,<span class="number">3</span>,<span class="number">7</span>);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+True
+True
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String swapcase() Method Example</h3>
+<p>It inverts case of all characters in a string.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.swapcase();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"welcome&nbsp;to&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.swapcase();&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+hELLO pYTHON
+WELCOME TO sssit
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String lstrip() Method Example</h3>
+<p>It removes all leading whitespace of a string and can also be used to remove particular character from leading.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"&nbsp;&nbsp;&nbsp;&nbsp;Hello&nbsp;Python"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.lstrip();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"@@@@@@@@welcome&nbsp;to&nbsp;SSSIT"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.lstrip(<span class="string">'@'</span>);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+Hello Python
+welcome to world to SSSIT
+&gt;&gt;&gt;
+</pre>
+</div>
+<h3 class="h3">Python String rstrip() Method Example</h3>
+<p>It removes all trailing whitespace of a string and can also be used to remove particular character from trailing.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">string1=<span class="string">"&nbsp;&nbsp;&nbsp;&nbsp;Hello&nbsp;Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</span>;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string1.rstrip();&nbsp;&nbsp;</li>
+<li class="alt">string2=<span class="string">"@welcome&nbsp;to&nbsp;SSSIT!!!"</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;string2.rstrip(<span class="string">'!'</span>);&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock3">
+<pre>&gt;&gt;&gt; 
+  	  Hello Python
+@welcome to SSSIT
+&gt;&gt;&gt;</pre>
+</div>

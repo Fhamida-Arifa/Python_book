@@ -1,0 +1,493 @@
+<h1 style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #000080;">&nbsp;Input And Output</span></h1>
+<p>Python provides methods that can be used to read and write data. Python also provides supports of reading and writing data to Files.</p>
+<h2 class="h2">Python "print" Statement</h2>
+<p>"print" statement is used to print the output on the screen.</p>
+<p>print statement is used to take string as input and place that string to standard output.</p>
+<p>Whatever you want to display on output place that expression inside the inverted commas. The expression whose value is to printed place it without inverted commas.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"expression"</span>&nbsp;<span class="keyword">or</span>&nbsp;<span class="keyword">print</span>&nbsp;expression.&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Exampple</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">a=<span class="number">10</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Welcome&nbsp;to&nbsp;the&nbsp;world&nbsp;of&nbsp;Python"</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;a&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Welcome&nbsp;to&nbsp;the&nbsp;world&nbsp;of&nbsp;Python&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Input from Keyboard:</h2>
+<p>Python offers two built-in functions for taking input from user, given below:</p>
+<p><strong>1) input()</strong></p>
+<p><strong>2) raw_input()</strong></p>
+<p><strong>1) input() function</strong>input() function is used to take input from the user. Whatever expression is given by the user, it is evaluated and result is returned back.</p>
+<p><strong>Python input() Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">input(<span class="string">"Expression"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python input() Function Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">n=input(<span class="string">"Enter&nbsp;your&nbsp;expression&nbsp;"</span>);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"The&nbsp;evaluated&nbsp;expression&nbsp;is&nbsp;"</span>,&nbsp;n&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;your&nbsp;expression&nbsp;<span class="number">10</span>*<span class="number">2</span>&nbsp;&nbsp;</li>
+<li class="alt">The&nbsp;evaluated&nbsp;expression&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">20</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">Python raw_input()</h3>
+<p><strong>2) raw_input()</strong>raw_input() function is used to take input from the user. It takes the input from the Standard input in the form of a string and reads the data from a line at once.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">raw_input(?statement?)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python raw_input() Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">n=raw_input(<span class="string">"Enter&nbsp;your&nbsp;name&nbsp;"</span>);&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Welcome&nbsp;"</span>,&nbsp;n&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;your&nbsp;name&nbsp;Rajat&nbsp;&nbsp;</li>
+<li class="alt">Welcome&nbsp;&nbsp;Rajat&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">raw_input() function returns a string. Hence in case an expression is to be evaluated, then it has to be type casted to its following data type. Some of the examples are given below:</p>
+<p><strong>Program to calculate Simple Interest.</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">prn=int(raw_input(<span class="string">"Enter&nbsp;Principal"</span>))&nbsp;&nbsp;</li>
+<li class="">r=int(raw_input(<span class="string">"Enter&nbsp;Rate"</span>))&nbsp;&nbsp;</li>
+<li class="alt">t=int(raw_input(<span class="string">"Enter&nbsp;Time"</span>))&nbsp;&nbsp;</li>
+<li class="">si=(prn*r*t)/<span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Simple&nbsp;Interest&nbsp;is&nbsp;"</span>,si&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;Principal1000&nbsp;&nbsp;</li>
+<li class="alt">Enter&nbsp;Rate10&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;Time2&nbsp;&nbsp;</li>
+<li class="alt">Simple&nbsp;Interest&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">200</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Program to enter details of an user and print them.</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">name=raw_input(<span class="string">"Enter&nbsp;your&nbsp;name&nbsp;"</span>)&nbsp;&nbsp;</li>
+<li class="">math=float(raw_input(<span class="string">"Enter&nbsp;your&nbsp;marks&nbsp;in&nbsp;Math"</span>))&nbsp;&nbsp;</li>
+<li class="alt">physics=float(raw_input(<span class="string">"Enter&nbsp;your&nbsp;marks&nbsp;in&nbsp;Physics"</span>))&nbsp;&nbsp;</li>
+<li class="">chemistry=float(raw_input(<span class="string">"Enter&nbsp;your&nbsp;marks&nbsp;in&nbsp;Chemistry"</span>))&nbsp;&nbsp;</li>
+<li class="alt">rollno=int(raw_input(<span class="string">"Enter&nbsp;your&nbsp;Roll&nbsp;no"</span>))&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Welcome&nbsp;"</span>,name&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Your&nbsp;Roll&nbsp;no&nbsp;is&nbsp;"</span>,rollno&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Marks&nbsp;in&nbsp;Maths&nbsp;is&nbsp;"</span>,math&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Marks&nbsp;in&nbsp;Physics&nbsp;is&nbsp;"</span>,physics&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;<span class="string">"Marks&nbsp;in&nbsp;Chemistry&nbsp;is&nbsp;"</span>,chemistry&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;<span class="string">"Average&nbsp;marks&nbsp;is&nbsp;"</span>,(math+physics+chemistry)/<span class="number">3</span>&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;your&nbsp;name&nbsp;rajat&nbsp;&nbsp;</li>
+<li class="alt">Enter&nbsp;your&nbsp;marks&nbsp;<span class="keyword">in</span>&nbsp;Math76.<span class="number">8</span>&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;your&nbsp;marks&nbsp;<span class="keyword">in</span>&nbsp;Physics71.<span class="number">4</span>&nbsp;&nbsp;</li>
+<li class="alt">Enter&nbsp;your&nbsp;marks&nbsp;<span class="keyword">in</span>&nbsp;Chemistry88.<span class="number">4</span>&nbsp;&nbsp;</li>
+<li class="">Enter&nbsp;your&nbsp;Roll&nbsp;no0987645672&nbsp;&nbsp;</li>
+<li class="alt">Welcome&nbsp;&nbsp;rajat&nbsp;&nbsp;</li>
+<li class="">Your&nbsp;Roll&nbsp;no&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">987645672</span>&nbsp;&nbsp;</li>
+<li class="alt">Marks&nbsp;<span class="keyword">in</span>&nbsp;Maths&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">76.8</span>&nbsp;&nbsp;</li>
+<li class="">Marks&nbsp;<span class="keyword">in</span>&nbsp;Physics&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">71.4</span>&nbsp;&nbsp;</li>
+<li class="alt">Marks&nbsp;<span class="keyword">in</span>&nbsp;Chemistry&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">88.4</span>&nbsp;&nbsp;</li>
+<li class="">Average&nbsp;marks&nbsp;<span class="keyword">is</span>&nbsp;&nbsp;<span class="number">78.8666666667</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Python File Handling</h2>
+<p>Python provides the facility of working on Files. A File is an external storage on hard disk from where data can be stored and retrieved.</p>
+<p><strong>Operations on Files:</strong></p>
+<p><strong>1) Opening a File:</strong>&nbsp;Before working with Files you have to open the File. To open a File, Python built in function open() is used. It returns an object of File which is used with other functions. Having opened the file now you can perform read, write, etc. operations on the File.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">obj=open(filename&nbsp;,&nbsp;mode&nbsp;,&nbsp;buffer)&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>here,</strong></p>
+<p><strong>filename:</strong>It is the name of the file which you want to access.</p>
+<p><strong>mode:</strong>It specifies the mode in which File is to be opened.There are many types of mode. Mode depends the operation to be performed on File. Default access mode is read.</p>
+<p><strong>2) Closing a File:</strong>Once you are finished with the operations on File at the end you need to close the file. It is done by the close() method. close() method is used to close a File.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">fileobject.close()&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>3) Writing to a File:</strong>write() method is used to write a string into a file.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">fileobject.write(string&nbsp;str)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>4) Reading from a File:</strong>read() method is used to read data from the File.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">fileobject.read(value)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>here, value is the number of bytes to be read. In case, no value is given it reads till end of file is reached.</p>
+<p><strong>Program to read and write data from a file.</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">obj=open(<span class="string">"abcd.txt"</span>,<span class="string">"w"</span>)&nbsp;&nbsp;</li>
+<li class="">obj.write(<span class="string">"Welcome&nbsp;to&nbsp;the&nbsp;world&nbsp;of&nbsp;Python"</span>)&nbsp;&nbsp;</li>
+<li class="alt">obj.close()&nbsp;&nbsp;</li>
+<li class="">obj1=open(<span class="string">"abcd.txt"</span>,<span class="string">"r"</span>)&nbsp;&nbsp;</li>
+<li class="alt">s=obj1.read()&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;s&nbsp;&nbsp;</li>
+<li class="alt">obj1.close()&nbsp;&nbsp;</li>
+<li class="">obj2=open(<span class="string">"abcd.txt"</span>,<span class="string">"r"</span>)&nbsp;&nbsp;</li>
+<li class="alt">s1=obj2.read(<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;s1&nbsp;&nbsp;</li>
+<li class="alt">obj2.close()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Welcome&nbsp;to&nbsp;the&nbsp;world&nbsp;of&nbsp;Python&nbsp;&nbsp;</li>
+<li class="alt">Welcome&nbsp;to&nbsp;the&nbsp;world&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Attributes of File:</h2>
+<p>There are following File attributes.</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>Returns the name of the file.</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>Returns the mode in which file is being opened.</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>Returns Boolean value. True, in case if file is closed else false.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">obj&nbsp;=&nbsp;open(<span class="string">"data.txt"</span>,&nbsp;<span class="string">"w"</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;&nbsp;obj.name&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;&nbsp;obj.mode&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;&nbsp;obj.closed&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">data.txt&nbsp;&nbsp;</li>
+<li class="alt">w&nbsp;&nbsp;</li>
+<li class=""><span class="special">False</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Modes of File:</h2>
+<p>There are different modes of file in which it can be opened. They are mentioned in the following table.</p>
+<p class="n">A File can be opened in two modes:</p>
+<p>1) Text Mode.</p>
+<p>2) Binary Mode.</p>
+<p>&nbsp;</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>R</td>
+<td>It opens in Reading mode. It is default mode of File. Pointer is at beginning of the file.</td>
+</tr>
+<tr>
+<td>rb</td>
+<td>It opens in Reading mode for binary format. It is the default mode. Pointer is at beginning of file.</td>
+</tr>
+<tr>
+<td>r+</td>
+<td>Opens file for reading and writing. Pointer is at beginning of file.</td>
+</tr>
+<tr>
+<td>rb+</td>
+<td>Opens file for reading and writing in binary format. Pointer is at beginning of file.</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Opens file in Writing mode. If file already exists, then overwrite the file else create a new file.</td>
+</tr>
+<tr>
+<td>wb</td>
+<td>Opens file in Writing mode in binary format. If file already exists, then overwrite the file else create a new file.</td>
+</tr>
+<tr>
+<td>w+</td>
+<td>Opens file for reading and writing. If file already exists, then overwrite the file else create a new file.</td>
+</tr>
+<tr>
+<td>wb+</td>
+<td>Opens file for reading and writing in binary format. If file already exists, then overwrite the file else create a new file.</td>
+</tr>
+<tr>
+<td>a</td>
+<td>Opens file in Appending mode. If file already exists, then append the data at the end of existing file, else create a new file.</td>
+</tr>
+<tr>
+<td>ab</td>
+<td>Opens file in Appending mode in binary format. If file already exists, then append the data at the end of existing file, else create a new file.</td>
+</tr>
+<tr>
+<td>a+</td>
+<td>Opens file in reading and appending mode. If file already exists, then append the data at the end of existing file, else create a new file.</td>
+</tr>
+<tr>
+<td>ab+</td>
+<td>Opens file in reading and appending mode in binary format. If file already exists, then append the data at the end of existing file, else create a new file.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="h2">Methods:</h2>
+<p>There are many methods related to File Handling. They are given in the following table:</p>
+<p class="n">There is a module "os" defined in Python that provides various functions which are used to perform various operations on Files. To use these functions 'os' needs to be imported.</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>rename()</td>
+<td>It is used to rename a file. It takes two arguments, existing_file_name and new_file_name.</td>
+</tr>
+<tr>
+<td>remove()</td>
+<td>It is used to delete a file. It takes one argument. Pass the name of the file which is to be deleted as the argument of method.</td>
+</tr>
+<tr>
+<td>mkdir()</td>
+<td>It is used to create a directory. A directory contains the files. It takes one argument which is the name of the directory.</td>
+</tr>
+<tr>
+<td>chdir()</td>
+<td>It is used to change the current working directory. It takes one argument which is the name of the directory.</td>
+</tr>
+<tr>
+<td>getcwd()</td>
+<td>It gives the current working directory.</td>
+</tr>
+<tr>
+<td>rmdir()</td>
+<td>It is used to delete a directory. It takes one argument which is the name of the directory.</td>
+</tr>
+<tr>
+<td>tell()</td>
+<td>It is used to get the exact position in the file.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1) rename():</strong></p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">os.rename(existing_file_name,&nbsp;new_file_name)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>eg:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.rename(<span class="string">'mno.txt'</span>,<span class="string">'pqr.txt'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) remove():</strong></p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">os.remove(file_name)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>eg:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.remove(<span class="string">'mno.txt'</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>3) mkdir()</strong></p>
+<p><strong>Syntax:</strong></p>
+<p>os.mkdir("file_name")</p>
+<p><strong>eg:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.mkdir(<span class="string">"new"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>4) chdir()</strong></p>
+<p><strong>Syntax:</strong></p>
+<p>os.chdir("file_name")</p>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.chdir(<span class="string">"new"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>5) getcwd()</strong></p>
+<p><strong>Syntax:</strong></p>
+<p>os.getcwd()</p>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;os.getcwd()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>6) rmdir()</strong></p>
+<p><strong>Syntax:</strong></p>
+<p>os.rmdir("directory_name)</p>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.rmdir(<span class="string">"new"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>

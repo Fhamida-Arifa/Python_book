@@ -1,0 +1,469 @@
+<h1 class="h1" style="text-align: center;"><span style="color: #000080;">USING MODULES</span></h1>
+<h2 class="h1">Python Module</h2>
+<p>Modules are used to categorize Pyhton code into smaller parts. A module is simply a Python file, where classes, functions and variables are defined. Grouping similar code into a single file makes it easy to access. Have a look at below example.</p>
+<p>If the content of a book is not indexed or categorized into individual chapters, the book might have turned boring and hectic. Hence, dividing book into chapters made it easy to understand.</p>
+<p>In the same sense python modules are the files which have similar code. Thus module is simplify a python code where classes, variables and functions are defined.</p>
+<h3 class="h3">Python Module Advantage</h3>
+<p>Python provides the following advantages for using module:</p>
+<p><strong>1) Reusability:</strong>&nbsp;Module can be used in some other python code. Hence it provides the facility of code reusability.</p>
+<p><strong>2) Categorization:</strong>&nbsp;Similar type of attributes can be placed in one module.</p>
+<h2 class="h2">Importing a Module:</h2>
+<p>There are different ways by which you we can import a module. These are as follows:</p>
+<h3 class="h3">1) Using import statement:</h3>
+<p>"import" statement can be used to import a module.</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;&lt;file_name1,&nbsp;file_name2,...file_name(n)=""&gt;&nbsp;&nbsp;</li>
+<li class="">&lt;/file_name1,&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Example</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;add(a,b):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;c=a+b&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;c&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Save the file by the name addition.py. To import this file "import" statement is used.</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;addition&nbsp;&nbsp;</li>
+<li class="">addition.add(<span class="number">10</span>,<span class="number">20</span>)&nbsp;&nbsp;</li>
+<li class="alt">addition.add(<span class="number">30</span>,<span class="number">40</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Create another python file in which you want to import the former python file. For that, import statement is used as given in the above example. The corresponding method can be used by file_name.method (). (Here, addition. add (), where addition is the python file and add () is the method defined in the file addition.py)</p>
+<p>Output:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">30</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">70</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p class="n">NOTE: You can access any function which is inside a module by module name and function name separated by dot. It is also known as period. Whole notation is known as dot notation.</p>
+<p><strong>Python Importing Multiple Modules Example</strong></p>
+<p><strong>1) msg.py:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg_method():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"Today&nbsp;the&nbsp;weather&nbsp;is&nbsp;rainy"</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) display.py:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;display_method():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"The&nbsp;weather&nbsp;is&nbsp;Sunny"</span>&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>3) multiimport.py:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;msg,display&nbsp;&nbsp;</li>
+<li class="">msg.msg_method()&nbsp;&nbsp;</li>
+<li class="alt">display.display_method()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Output:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">Today&nbsp;the&nbsp;weather&nbsp;<span class="keyword">is</span>&nbsp;rainy&nbsp;&nbsp;</li>
+<li class="alt">The&nbsp;weather&nbsp;<span class="keyword">is</span>&nbsp;Sunny&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">2) Using from.. import statement:</h3>
+<p>from..import statement is used to import particular attribute from a module. In case you do not want whole of the module to be imported then you can use from ?import statement.</p>
+<p>Syntax:</p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">from</span>&nbsp;&nbsp;&lt;module_name&gt;&nbsp;<span class="keyword">import</span>&nbsp;&lt;attribute1,attribute2,attribute3,...attributen&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li class="">&lt;/attribute1,attribute2,attribute3,...attributen&gt;&lt;/module_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Python from.. import Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;circle(r):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="number">3.14</span>*r*r&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">def</span>&nbsp;square(l):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;l*l&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">def</span>&nbsp;rectangle(l,b):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;l*b&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">def</span>&nbsp;triangle(b,h):&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="number">0.5</span>*b*h&nbsp;&nbsp;</li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) area1.py</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">from</span>&nbsp;area&nbsp;<span class="keyword">import</span>&nbsp;square,rectangle&nbsp;&nbsp;</li>
+<li class="">square(<span class="number">10</span>)&nbsp;&nbsp;</li>
+<li class="alt">rectangle(<span class="number">2</span>,<span class="number">5</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">10</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">3) To import whole module:</h3>
+<p>You can import whole of the module using "from? import *"</p>
+<p><strong>Syntax:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">from</span>&nbsp;&lt;module_name&gt;&nbsp;<span class="keyword">import</span>&nbsp;*&nbsp;&nbsp;</li>
+<li class="">&lt;/module_name&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Using the above statement all the attributes defined in the module will be imported and hence you can access each attribute.</p>
+<p><strong>1) area.py</strong></p>
+<p>Same as above example</p>
+<p><strong>2) area1.py</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">from</span>&nbsp;area&nbsp;<span class="keyword">import</span>&nbsp;*&nbsp;&nbsp;</li>
+<li class="">square(<span class="number">10</span>)&nbsp;&nbsp;</li>
+<li class="alt">rectangle(<span class="number">2</span>,<span class="number">5</span>)&nbsp;&nbsp;</li>
+<li class="">circle(<span class="number">5</span>)&nbsp;&nbsp;</li>
+<li class="alt">triangle(<span class="number">10</span>,<span class="number">20</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">100</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">10</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">78.5</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">100.0</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h2 class="h2">Built in Modules in Python:</h2>
+<p>There are many built in modules in Python. Some of them are as follows:</p>
+<p>math, random , threading , collections , os , mailbox , string , time , tkinter etc..</p>
+<p>Each module has a number of built in functions which can be used to perform various functions.</p>
+<p>Let?s have a look over each module:</p>
+<p>1) math:</p>
+<p>Using math module , you can use different built in mathematical functions.</p>
+<p><strong>Functions:</strong></p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>ceil(n)</td>
+<td>It returns the next integer number of the given number</td>
+</tr>
+<tr>
+<td>sqrt(n)</td>
+<td>It returns the Square root of the given number.</td>
+</tr>
+<tr>
+<td>exp(n)</td>
+<td>It returns the natural logarithm e raised to the given number</td>
+</tr>
+<tr>
+<td>floor(n)</td>
+<td>It returns the previous integer number of the given number.</td>
+</tr>
+<tr>
+<td>log(n,baseto)</td>
+<td>It returns the natural logarithm of the number.</td>
+</tr>
+<tr>
+<td>pow(baseto, exp)</td>
+<td>It returns baseto raised to the exp power.</td>
+</tr>
+<tr>
+<td>sin(n)</td>
+<td>It returns sine of the given radian.</td>
+</tr>
+<tr>
+<td>cos(n)</td>
+<td>It returns cosine of the given radian.</td>
+</tr>
+<tr>
+<td>tan(n)</td>
+<td>It returns tangent of the given radian.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python Math Module Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;math&nbsp;&nbsp;</li>
+<li class="">a=<span class="number">4.6</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;math.ceil(a)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.floor(a)&nbsp;&nbsp;</li>
+<li class="alt">b=<span class="number">9</span>&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.sqrt(b)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;math.exp(<span class="number">3.0</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.log(<span class="number">2.0</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;math.pow(<span class="number">2.0</span>,<span class="number">3.0</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.sin(<span class="number">0</span>)&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;math.cos(<span class="number">0</span>)&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.tan(<span class="number">45</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">5.0</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">4.0</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">3.0</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">20.0855369232</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">0.69314718056</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">8.0</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">0.0</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">1.0</span>&nbsp;&nbsp;</li>
+<li class=""><span class="number">1.61977519054</span>&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Constants:</strong></p>
+<p>The math module provides two constants for mathematical Operations:</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Constants</th>
+<th>Descriptions</th>
+</tr>
+<tr>
+<td>Pi</td>
+<td>Returns constant ? = 3.14159...</td>
+</tr>
+<tr>
+<td>ceil(n)</td>
+<td>Returns constant e= 2.71828...</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;math&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;math.pi&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;math.e&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">3.14159265359</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">2.71828182846</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) random:</strong></p>
+<p>The random module is used to generate the random numbers. It provides the following two built in functions:</p>
+<table class="alt">
+<tbody>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>random()</td>
+<td>It returns a random number between 0.0 and 1.0 where 1.0 is exclusive.</td>
+</tr>
+<tr>
+<td>randint(x,y)</td>
+<td>It returns a random number between x and y where both the numbers are inclusive.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Python Module Example</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;random&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">print</span>&nbsp;random.random()&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">print</span>&nbsp;random.randint(<span class="number">2</span>,<span class="number">8</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class=""><span class="number">0.797473843839</span>&nbsp;&nbsp;</li>
+<li class="alt"><span class="number">7</span>&nbsp;&nbsp;</li>
+<li class="">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p>Other modules will be covered in their respective topics.</p>
+<h2 class="h2">Python Package</h2>
+<p>A Package is simply a collection of similar modules, sub-packages etc..</p>
+<p>Steps to create and import Package:</p>
+<p>1) Create a directory, say Info</p>
+<p>2) Place different modules inside the directory. We are placing 3 modules msg1.py, msg2.py and msg3.py respectively and place corresponding codes in respective modules. Let us place msg1() in msg1.py, msg2() in msg2.py and msg3() in msg3.py.</p>
+<p>3) Create a file __init__.py which specifies attributes in each module.</p>
+<p>4) Import the package and use the attributes using package.</p>
+<p>Have a look over the example:</p>
+<p><strong>1) Create the directory:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;os&nbsp;&nbsp;</li>
+<li class="">os.mkdir(<span class="string">"Info"</span>)&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>2) Place different modules in package: (Save different modules inside the Info package)</strong></p>
+<p><strong>msg1.py</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg1():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"This&nbsp;is&nbsp;msg1"</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>msg2.py</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg2():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"This&nbsp;is&nbsp;msg2"</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>msg3.py</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">def</span>&nbsp;msg3():&nbsp;&nbsp;</li>
+<li class="">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">print</span>&nbsp;<span class="string">"This&nbsp;is&nbsp;msg3"</span>&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>3) Create __init__.py file:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">from</span>&nbsp;msg1&nbsp;<span class="keyword">import</span>&nbsp;msg1&nbsp;&nbsp;</li>
+<li class=""><span class="keyword">from</span>&nbsp;msg2&nbsp;<span class="keyword">import</span>&nbsp;msg2&nbsp;&nbsp;</li>
+<li class="alt"><span class="keyword">from</span>&nbsp;msg3&nbsp;<span class="keyword">import</span>&nbsp;msg3&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>4)Import package and use the attributes:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt"><span class="keyword">import</span>&nbsp;Info&nbsp;&nbsp;</li>
+<li class="">Info.msg1()&nbsp;&nbsp;</li>
+<li class="alt">Info.msg2()&nbsp;&nbsp;</li>
+<li class="">Info.msg3()&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<p><strong>Output:</strong></p>
+<div class="codeblock">
+<div class="dp-highlighter">
+<div class="bar">&nbsp;</div>
+<ol class="dp-py" start="1">
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;</li>
+<li class="">This&nbsp;<span class="keyword">is</span>&nbsp;msg1&nbsp;&nbsp;</li>
+<li class="alt">This&nbsp;<span class="keyword">is</span>&nbsp;msg2&nbsp;&nbsp;</li>
+<li class="">This&nbsp;<span class="keyword">is</span>&nbsp;msg3&nbsp;&nbsp;</li>
+<li class="alt">&gt;&gt;&gt;&nbsp;&nbsp;</li>
+</ol>
+</div>
+</div>
+<h3 class="h3">What is __init__.py file?</h3>
+<p>__init__.py is simply a file that is used to consider the directories on the disk as the package of the Python. It is basically used to initialize the python packages.</p>
